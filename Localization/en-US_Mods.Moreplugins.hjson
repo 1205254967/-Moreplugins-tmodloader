@@ -1,0 +1,293 @@
+Items: {
+	MorePlugins_HeartOfSteel: {
+		DisplayName: More Plugins_ Heart Of Steel
+		Tooltip: ""
+	}
+
+	MorePlugins_Thorn: {
+		DisplayName: More Plugins_ Thorn
+		Tooltip: ""
+	}
+
+	MorePlugins_Steel: {
+		DisplayName: More Plugins_ Steel
+		Tooltip: ""
+	}
+
+	MorePlugins_Nothosaur: {
+		DisplayName: More Plugins_ Nothosaur
+		Tooltip: ""
+	}
+
+	MorePlugins_Guide: {
+		DisplayName: More Plugins_ Guide
+		Tooltip: ""
+	}
+
+	MorePlugins_Kaishakunin: {
+		DisplayName: More Plugins_ Kaishakunin
+		Tooltip: ""
+	}
+
+	MorePlugins_Massacre: {
+		DisplayName: More Plugins_ Massacre
+		Tooltip: ""
+	}
+
+	MorePlugins_Shadowyeggplant: {
+		DisplayName: More Plugins_ Shadowyeggplant
+		Tooltip: ""
+	}
+
+	MorePlugins_Leaf: {
+		DisplayName: More Plugins_ Leaf
+		Tooltip: ""
+	}
+
+	MorePlugins_LavaSeed: {
+		DisplayName: More Plugins_ Lava Seed
+		Tooltip: ""
+	}
+
+	MorePlugins_Night: {
+		DisplayName: More Plugins_ Night
+		Tooltip: ""
+	}
+
+	MorePlugins_Dusk: {
+		DisplayName: More Plugins_ Dusk
+		Tooltip: ""
+	}
+
+	Holy: {
+		DisplayName: Holy
+		Tooltip: ""
+	}
+
+	Outdoorsurvivalkit: {
+		DisplayName: Outdoorsurvivalkit
+		Tooltip: ""
+	}
+
+	Pure: {
+		DisplayName: Pure
+		Tooltip: ""
+	}
+
+	TerraHeart: {
+		DisplayName: Terra Heart
+		Tooltip: ""
+	}
+
+	Bud: {
+		DisplayName: Bud
+		Tooltip: ""
+	}
+
+	Vibrissa: {
+		DisplayName: Vibrissa
+		Tooltip: ""
+	}
+
+	Tanghulu: {
+		DisplayName: Tanghulu
+		Tooltip: ""
+	}
+
+	NuclearWarhead: {
+		DisplayName: Nuclear Warhead
+		Tooltip: ""
+	}
+
+	Meatball: {
+		DisplayName: Meatball
+		Tooltip: ""
+	}
+
+	Disco: {
+		DisplayName: Disco
+		Tooltip: ""
+	}
+
+	Giantfist: {
+		DisplayName: Giantfist
+		Tooltip: ""
+	}
+
+	Unity: {
+		DisplayName: Unity
+		Tooltip: ""
+	}
+
+	Ghost: {
+		DisplayName: Ghost
+		Tooltip: ""
+	}
+
+	Shaman: {
+		DisplayName: Shaman
+		Tooltip: ""
+	}
+
+	GelatinJelly: {
+		DisplayName: Gelatin Jelly
+		Tooltip: ""
+	}
+
+	Hand: {
+		DisplayName: Hand
+		Tooltip: ""
+	}
+}
+
+Mods: {
+	Moreplugins: {
+		Items: {
+			Bud: {
+				DisplayName: Bud
+				Tooltip: ""
+			}
+
+			Disco: {
+				DisplayName: Disco
+				Tooltip: ""
+			}
+
+			GelatinJelly: {
+				DisplayName: Gelatin Jelly
+				Tooltip: ""
+			}
+
+			Ghost: {
+				DisplayName: Ghost
+				Tooltip: ""
+			}
+
+			Giantfist: {
+				DisplayName: Giantfist
+				Tooltip: ""
+			}
+
+			Holy: {
+				DisplayName: Holy
+				Tooltip: ""
+			}
+
+			Meatball: {
+				DisplayName: Meatball
+				Tooltip: ""
+			}
+
+			MorePlugins_Dusk: {
+				DisplayName: More Plugins_ Dusk
+				Tooltip: ""
+			}
+
+			MorePlugins_Guide: {
+				DisplayName: More Plugins_ Guide
+				Tooltip: ""
+			}
+
+			MorePlugins_HeartOfSteel: {
+				DisplayName: More Plugins_ Heart Of Steel
+				Tooltip: ""
+			}
+
+			MorePlugins_Kaishakunin: {
+				DisplayName: More Plugins_ Kaishakunin
+				Tooltip: ""
+			}
+
+			MorePlugins_LavaSeed: {
+				DisplayName: More Plugins_ Lava Seed
+				Tooltip: ""
+			}
+
+			MorePlugins_Leaf: {
+				DisplayName: More Plugins_ Leaf
+				Tooltip: ""
+			}
+
+			MorePlugins_Massacre: {
+				DisplayName: More Plugins_ Massacre
+				Tooltip: ""
+			}
+
+			MorePlugins_Night: {
+				DisplayName: More Plugins_ Night
+				Tooltip: ""
+			}
+
+			MorePlugins_Nothosaur: {
+				DisplayName: More Plugins_ Nothosaur
+				Tooltip: ""
+			}
+
+			MorePlugins_Shadowyeggplant: {
+				DisplayName: More Plugins_ Shadowyeggplant
+				Tooltip: ""
+			}
+
+			MorePlugins_Steel: {
+				DisplayName: More Plugins_ Steel
+				Tooltip: ""
+			}
+
+			MorePlugins_Thorn: {
+				DisplayName: More Plugins_ Thorn
+				Tooltip: ""
+			}
+
+			NuclearWarhead: {
+				DisplayName: Nuclear Warhead
+				Tooltip: ""
+			}
+
+			Outdoorsurvivalkit: {
+				DisplayName: Outdoorsurvivalkit
+				Tooltip: ""
+			}
+
+			Pure: {
+				DisplayName: Pure
+				Tooltip: ""
+			}
+
+			Shaman: {
+				DisplayName: Shaman
+				Tooltip: ""
+			}
+
+			Tanghulu: {
+				DisplayName: Tanghulu
+				Tooltip: ""
+			}
+
+			TerraHeart: {
+				DisplayName: Terra Heart
+				Tooltip: ""
+			}
+
+			Unity: {
+				DisplayName: Unity
+				Tooltip: ""
+			}
+
+			Vibrissa: {
+				DisplayName: Vibrissa
+				Tooltip: ""
+			}
+		}
+	}
+}
+
+Projectiles: {
+	BloodThornProjectile.DisplayName: Blood Thorn Projectile
+	DiscoCrystalProjectile.DisplayName: Disco Crystal Projectile
+}
+
+AccessorySlot: {
+	FunctionalSlot: Wings
+	VanitySlot: Vanity Wings
+	DyeSlot: Dye
+}

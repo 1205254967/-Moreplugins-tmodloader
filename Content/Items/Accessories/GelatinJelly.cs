@@ -1,0 +1,58 @@
+using Microsoft.Xna.Framework;
+using System;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+using Terraria.DataStructures;
+using Moreplugins.Content.Players;
+
+
+namespace Moreplugins.Content.Items.Accessories
+{
+    /// <summary>
+    /// GelatinJelly饰品 - 明胶果冻
+    /// </summary>
+    internal class GelatinJelly : BasicPlugins
+    {
+        // 饰品纹理路径
+        public override string Texture => "Moreplugins/Assets/Items/Accessories/GelatinJelly";
+
+        #region 基础属性配置
+        public override void SetDefaults()
+        {
+            Item.width = 32;
+            Item.height = 32;
+            Item.maxStack = 1;
+            Item.accessory = true;
+            Item.rare = ItemRarityID.Green;
+            Item.value = Item.sellPrice(gold: 10);
+        }
+        #endregion
+
+        #region 核心饰品效果
+        public override void UpdateAccessory(Player player, bool hideVisual)
+        {
+            // 提升10%移动速度
+            player.moveSpeed += 0.1f;
+            // 提升10%冲刺速度
+            player.maxRunSpeed += 0.1f;
+            // 提升10%飞行时间
+            player.wingTimeMax = (int)(player.wingTimeMax * 1.1f);
+            // 提升10%飞行速度
+            player.maxFallSpeed += 0.1f;
+            player.GetModPlayer<PluginsPlayer>().SoundAcc = true;
+        }
+        #endregion
+
+        #region 合成配方
+        public override void AddRecipes()
+        {
+            CreateRecipe()
+                .AddIngredient(4988, 1)                         // 明胶水晶
+                .AddIngredient(ItemID.IronBar, 3)                // 3个铁锭
+                .AddTile(TileID.WorkBenches)                    // 工作台合成
+                .Register();
+        }
+        #endregion
+    }
+}
