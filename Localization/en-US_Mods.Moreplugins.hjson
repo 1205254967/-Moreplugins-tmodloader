@@ -138,6 +138,16 @@ Items: {
 		DisplayName: Hand
 		Tooltip: ""
 	}
+
+	PlusinsPetItem: {
+		DisplayName: Plusins Pet Item
+		Tooltip: ""
+	}
+
+	HeartOfQueen: {
+		DisplayName: Heart Of Queen
+		Tooltip: ""
+	}
 }
 
 Mods: {
@@ -284,10 +294,18 @@ Mods: {
 Projectiles: {
 	BloodThornProjectile.DisplayName: Blood Thorn Projectile
 	DiscoCrystalProjectile.DisplayName: Disco Crystal Projectile
+	PlusinsPetProjectile.DisplayName: Plusins Pet Projectile
 }
 
 AccessorySlot: {
 	FunctionalSlot: Wings
 	VanitySlot: Vanity Wings
 	DyeSlot: Dye
+}
+
+Buffs: {
+	PlusinsPetBuff: {
+		DisplayName: Plusins Pet Buff
+		Description: Mods.Moreplugins.Buffs.PlusinsPetBuff.Description
+	}
 }

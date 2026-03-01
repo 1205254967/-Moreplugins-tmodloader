@@ -316,6 +316,16 @@ Items: {
 			[c/ff6b6b:我见犹怜]
 			'''
 	}
+
+	PlusinsPetItem: {
+		// DisplayName: Plusins Pet Item
+		// Tooltip: ""
+	}
+
+	HeartOfQueen: {
+		DisplayName: 女皇之心
+		Tooltip: 光之女皇的精华渗透进了此圣物。
+	}
 }
 
 Mods: {
@@ -462,10 +472,18 @@ Mods: {
 Projectiles: {
 	// BloodThornProjectile.DisplayName: Blood Thorn Projectile
 	// DiscoCrystalProjectile.DisplayName: Disco Crystal Projectile
+	// PlusinsPetProjectile.DisplayName: Plusins Pet Projectile
 }
 
 AccessorySlot: {
 	FunctionalSlot: 这是你的屁股
 	VanitySlot: 装扮 插件
 	DyeSlot: 染色
+}
+
+Buffs: {
+	PlusinsPetBuff: {
+		// DisplayName: Plusins Pet Buff
+		// Description: Mods.Moreplugins.Buffs.PlusinsPetBuff.Description
+	}
 }
