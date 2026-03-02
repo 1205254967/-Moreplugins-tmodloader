@@ -9,9 +9,8 @@ using Microsoft.Xna.Framework;
 
 namespace Moreplugins.Content.Items.Accessories
 {
-    public class HeartOfQueen : BasicPlugins
+    public class HeartOfQueenPlugins : BasicPlugins
     {
-        public override string Texture => "Moreplugins/Assets/Items/Accessories/HeartOfQueen";
         #region 基础属性配置
         public override void SetStaticDefaults()
         {
