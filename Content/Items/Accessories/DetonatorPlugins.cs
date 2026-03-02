@@ -22,7 +22,7 @@ namespace Moreplugins.Content.Items.Accessories
             Item.maxStack = 1;
             Item.accessory = true;
             Item.rare = ItemRarityID.Blue;
-            Item.value = Item.sellPrice(gold: 5);
+            Item.value = Item.sellPrice(gold: 15);
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
