@@ -1,0 +1,211 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|d:\\qqjl\\247449387\\filerecv\\moreplugins\\content\\globalnpcs\\giantfistdrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|solutionrelative:content\\globalnpcs\\giantfistdrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|d:\\qqjl\\247449387\\filerecv\\moreplugins\\content\\globalnpcs\\handdrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|solutionrelative:content\\globalnpcs\\handdrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|d:\\qqjl\\247449387\\filerecv\\moreplugins\\content\\items\\accessories\\pureplugins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|solutionrelative:content\\items\\accessories\\pureplugins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|d:\\qqjl\\247449387\\filerecv\\moreplugins\\content\\items\\accessories\\terraheartplugins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|solutionrelative:content\\items\\accessories\\terraheartplugins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|d:\\qqjl\\247449387\\filerecv\\moreplugins\\content\\globalnpcs\\nothosaurglobalnpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|solutionrelative:content\\globalnpcs\\nothosaurglobalnpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|d:\\qqjl\\247449387\\filerecv\\moreplugins\\content\\globalnpcs\\discodrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|solutionrelative:content\\globalnpcs\\discodrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|d:\\qqjl\\247449387\\filerecv\\moreplugins\\content\\items\\accessories\\duskplugins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|solutionrelative:content\\items\\accessories\\duskplugins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|d:\\qqjl\\247449387\\filerecv\\moreplugins\\content\\pets\\plusinspetprojectile.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|solutionrelative:content\\pets\\plusinspetprojectile.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|d:\\qqjl\\247449387\\filerecv\\moreplugins\\content\\pets\\plusinspetprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|solutionrelative:content\\pets\\plusinspetprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|d:\\qqjl\\247449387\\filerecv\\moreplugins\\content\\items\\accessories\\nightplugins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|solutionrelative:content\\items\\accessories\\nightplugins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|d:\\qqjl\\247449387\\filerecv\\moreplugins\\content\\globalnpcs\\walloffleshdrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AD9018-8238-4B85-71A1-EE5A3883D909}|Moreplugins.csproj|solutionrelative:content\\globalnpcs\\walloffleshdrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PurePlugins.cs",
+              "DocumentMoniker": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\Items\\Accessories\\PurePlugins.cs",
+              "RelativeDocumentMoniker": "Content\\Items\\Accessories\\PurePlugins.cs",
+              "ToolTip": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\Items\\Accessories\\PurePlugins.cs",
+              "RelativeToolTip": "Content\\Items\\Accessories\\PurePlugins.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T13:36:59.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NightPlugins.cs",
+              "DocumentMoniker": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\Items\\Accessories\\NightPlugins.cs",
+              "RelativeDocumentMoniker": "Content\\Items\\Accessories\\NightPlugins.cs",
+              "ToolTip": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\Items\\Accessories\\NightPlugins.cs",
+              "RelativeToolTip": "Content\\Items\\Accessories\\NightPlugins.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAxwCsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T13:35:49.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DuskPlugins.cs",
+              "DocumentMoniker": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\Items\\Accessories\\DuskPlugins.cs",
+              "RelativeDocumentMoniker": "Content\\Items\\Accessories\\DuskPlugins.cs",
+              "ToolTip": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\Items\\Accessories\\DuskPlugins.cs",
+              "RelativeToolTip": "Content\\Items\\Accessories\\DuskPlugins.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAUwCMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T13:35:38.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TerraHeartPlugins.cs",
+              "DocumentMoniker": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\Items\\Accessories\\TerraHeartPlugins.cs",
+              "RelativeDocumentMoniker": "Content\\Items\\Accessories\\TerraHeartPlugins.cs",
+              "ToolTip": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\Items\\Accessories\\TerraHeartPlugins.cs",
+              "RelativeToolTip": "Content\\Items\\Accessories\\TerraHeartPlugins.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T13:35:18.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlusinsPetProjectile.cs",
+              "DocumentMoniker": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\Pets\\PlusinsPetProjectile.cs",
+              "RelativeDocumentMoniker": "Content\\Pets\\PlusinsPetProjectile.cs",
+              "ToolTip": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\Pets\\PlusinsPetProjectile.cs",
+              "RelativeToolTip": "Content\\Pets\\PlusinsPetProjectile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T13:35:12.851Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlusinsPetProjectile.png - PNG [16x16, 32 \u4F4D, PNG]",
+              "DocumentMoniker": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\Pets\\PlusinsPetProjectile.png",
+              "RelativeDocumentMoniker": "Content\\Pets\\PlusinsPetProjectile.png",
+              "ToolTip": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\Pets\\PlusinsPetProjectile.png - PNG [16x16, 32 \u4F4D, PNG]",
+              "RelativeToolTip": "Content\\Pets\\PlusinsPetProjectile.png - PNG [16x16, 32 \u4F4D, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-03-02T13:35:11.838Z",
+              "EditorCaption": " - PNG [16x16, 32 \u4F4D, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WallOfFleshDrop.cs",
+              "DocumentMoniker": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\GlobalNPCs\\WallOfFleshDrop.cs",
+              "RelativeDocumentMoniker": "Content\\GlobalNPCs\\WallOfFleshDrop.cs",
+              "ToolTip": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\GlobalNPCs\\WallOfFleshDrop.cs",
+              "RelativeToolTip": "Content\\GlobalNPCs\\WallOfFleshDrop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T13:35:05.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NothosaurGlobalNPC.cs",
+              "DocumentMoniker": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\GlobalNPCs\\NothosaurGlobalNPC.cs",
+              "RelativeDocumentMoniker": "Content\\GlobalNPCs\\NothosaurGlobalNPC.cs",
+              "ToolTip": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\GlobalNPCs\\NothosaurGlobalNPC.cs",
+              "RelativeToolTip": "Content\\GlobalNPCs\\NothosaurGlobalNPC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T13:34:52.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HandDrop.cs",
+              "DocumentMoniker": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\GlobalNPCs\\HandDrop.cs",
+              "RelativeDocumentMoniker": "Content\\GlobalNPCs\\HandDrop.cs",
+              "ToolTip": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\GlobalNPCs\\HandDrop.cs",
+              "RelativeToolTip": "Content\\GlobalNPCs\\HandDrop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T13:34:49.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GiantfistDrop.cs",
+              "DocumentMoniker": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\GlobalNPCs\\GiantfistDrop.cs",
+              "RelativeDocumentMoniker": "Content\\GlobalNPCs\\GiantfistDrop.cs",
+              "ToolTip": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\GlobalNPCs\\GiantfistDrop.cs",
+              "RelativeToolTip": "Content\\GlobalNPCs\\GiantfistDrop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T13:33:37.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Discodrop.cs",
+              "DocumentMoniker": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\GlobalNPCs\\Discodrop.cs",
+              "RelativeDocumentMoniker": "Content\\GlobalNPCs\\Discodrop.cs",
+              "ToolTip": "D:\\qqjl\\247449387\\FileRecv\\Moreplugins\\Content\\GlobalNPCs\\Discodrop.cs",
+              "RelativeToolTip": "Content\\GlobalNPCs\\Discodrop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T13:33:36.589Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
