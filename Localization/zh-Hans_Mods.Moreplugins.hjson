@@ -208,8 +208,12 @@ Items: {
 	}
 
 	DetonatorPlugins: {
-		// DisplayName: Detonator Plugins
-		// Tooltip: ""
+		DisplayName: 雷管
+		Tooltip: 
+			'''
+			角色死亡时爆炸
+			[c/cccccc:劳斯莱斯年审时被拉爆缸，检测公司：十年车龄已拖到维修厂 ——大象新闻]
+			'''
 	}
 
 	DiscoPlugins: {
