@@ -340,13 +340,13 @@ Items: {
 	}
 
 	EnchantedPlusins: {
-		// DisplayName: 附魔之心
+		// DisplayName: Enchanted Plusins
 		// Tooltip: ""
 	}
 
 	PumpkinCandlePlugins: {
 		DisplayName: 南瓜蜡烛
-		Tooltip: 
+		Tooltip:
 			'''
 			你的无头骑士剑会直接攻击敌人！
 			[c/ffa500:医生为烈焰杰克南瓜们做了近视手术...]
