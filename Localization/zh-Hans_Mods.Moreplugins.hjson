@@ -190,8 +190,12 @@ Items: {
 	}
 
 	PlusinsPetItem: {
-		DisplayName: Plusins Pet Item
-		Tooltip: ""
+		DisplayName: 金属
+		Tooltip:
+			'''
+			召唤宠物金属
+			[c/8b0000:捐赠者物品]
+			'''
 	}
 
 	BudPlugins: {
@@ -236,8 +240,8 @@ Items: {
 	}
 
 	EyePlugins: {
-		// DisplayName: Eye Plugins
-		// Tooltip: ""
+		DisplayName: 不可疑的眼球
+		Tooltip: 第三只眼睛让你能看清黑暗
 	}
 
 	GelatinJellyPlugins: {
@@ -344,7 +348,7 @@ AccessorySlot: {
 
 Buffs: {
 	PlusinsPetBuff: {
-		// DisplayName: Plusins Pet Buff
-		// Description: Mods.Moreplugins.Buffs.PlusinsPetBuff.Description
+		DisplayName: 宠物金属
+		Description: 当金属受到离心力的影响时就会呈现这样的形态
 	}
 }
