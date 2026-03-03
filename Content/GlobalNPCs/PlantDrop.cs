@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 using Terraria.GameContent.ItemDropRules;
 using Moreplugins.Content.Items.Accessories;
 
-namespace Moreplugins.Content.Items.Accessories
+namespace Moreplugins.Content.GlobalNPCs
 {
     /// <summary>
     /// 处理世纪之花掉落的GlobalNPC

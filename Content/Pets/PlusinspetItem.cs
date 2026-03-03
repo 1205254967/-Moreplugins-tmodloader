@@ -7,13 +7,15 @@ namespace Moreplugins.Content.Pets
 {
 	public class PlusinsPetItem : ModItem
 	{
-		// Names and descriptions of all ExamplePetX classes are defined using .hjson files in the Localization folder
 		public override void SetDefaults() {
-			Item.CloneDefaults(ItemID.ZephyrFish); // Copy the Defaults of the Zephyr Fish Item.
+			Item.CloneDefaults(ItemID.ZephyrFish);
 
-			Item.shoot = ModContent.ProjectileType<PlusinsPetProjectile>(); // "Shoot" your pet projectile.
-			Item.buffType = ModContent.BuffType<PlusinsPetBuff>(); // Apply buff upon usage of the Item.
-		}
+			Item.shoot = ModContent.ProjectileType<PlusinsPetProjectile>();
+			Item.buffType = ModContent.BuffType<PlusinsPetBuff>();
+            Item.maxStack = 1;
+            Item.rare = ItemRarityID.Green;
+            Item.value = Item.sellPrice(gold: 3);
+        }
 
 		public override bool? UseItem(Player player) {
 			if (player.whoAmI == Main.myPlayer) {
@@ -21,12 +23,5 @@ namespace Moreplugins.Content.Pets
 			}
 			return true;
 		}
-		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
-// 		public override void AddRecipes() {
-// 			CreateRecipe()
-// 				.AddIngredient<PlusinsItem>()
-// 				.AddTile<Tiles.Furniture.PlusinsWorkbench>()
-// 				.Register();
-// 		}
  	}
 }

@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.ItemDropRules;
 
-namespace Moreplugins
+namespace Moreplugins.Content.GlobalNPCs
 {
     /// <summary>
     /// 迪斯科棱晶的掉落

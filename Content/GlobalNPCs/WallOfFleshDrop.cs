@@ -2,9 +2,8 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.ItemDropRules;
-using Moreplugins.Content.Items.Accessories;
 
-namespace Moreplugins.Content.Items.Accessories
+namespace Moreplugins.Content.GlobalNPCs
 {
     /// <summary>
     /// 处理血肉墙掉落的GlobalNPC

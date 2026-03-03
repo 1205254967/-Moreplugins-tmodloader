@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.ItemDropRules;
 
-namespace Moreplugins
+namespace Moreplugins.Content.GlobalNPCs
 {
     /// <summary>
     /// 肉球的掉落
