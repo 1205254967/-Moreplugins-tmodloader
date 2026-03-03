@@ -1,23 +1,25 @@
+//Global using static了ModContent，这样不需要每次调用tmod内容的时候要多
+global using static Terraria.ModLoader.ModContent;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using ReLogic.Content;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.GameInput;
-using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI;
 using Moreplugins.Content.Items.Accessories;
+using System.Dynamic;
 
 namespace Moreplugins
 {
     public class PluginsSlotExtra : Mod
     {
-        private static PluginsSlotExtra instance;
-        
-        internal static PluginsSlotExtra Instance { get => instance; set => instance = value; }
+        /// <summary>
+        /// motherfucker不要试图让vs的自动修正改这种东西了
+        /// 没必要
+        /// </summary>
+        public static PluginsSlotExtra Instance;
         
         public override void Load() => Instance = this;
         public override void Unload() => Instance = null;
@@ -64,10 +66,13 @@ namespace Moreplugins
         public override bool ModifyDefaultSwapSlot(Item item, int accSlotToSwapTo) => 
             item.ModItem != null && item.ModItem is BasicPlugins;
 
-        public override string FunctionalTexture => "Moreplugins/Assets/Items/Accessories/Steel";
+        public override string FunctionalTexture => GetInstance<SteelPlugins>().Texture;
 
         public override void OnMouseHover(AccessorySlotType context)
         {
+            Main.hoverItemName = Language.GetTextValue(Mod.GetLocalizationKey($"AccessorySlot.{nameof(context)}"));
+            //motherfucker你们居然不直接赋值是吧
+            /*
             switch (context)
             {
                 case AccessorySlotType.FunctionalSlot:
@@ -82,6 +87,7 @@ namespace Moreplugins
                     Main.hoverItemName = Language.GetTextValue("Mods.Moreplugins.AccessorySlot.DyeSlot");
                     break;
             }
+            */
         }
     }
 }

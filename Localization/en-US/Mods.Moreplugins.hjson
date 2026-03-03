@@ -1,0 +1,26 @@
+Projectiles: {
+	PlusinsPetProjectile.DisplayName: Plusins Pet Projectile
+	DetonatorPluginsProjectile.DisplayName: Detonator Plugins Projectile
+}
+
+AccessorySlot: {
+	FunctionalSlot: This is YOU ASS
+	VanitySlot: DyeSlot:
+}
+
+Buffs: {
+	PlusinsPetBuff: {
+		DisplayName: Plusins Pet Buff
+		Description: Mods.Moreplugins.Buffs.PlusinsPetBuff.Description
+	}
+}
+
+Items: {
+	PlusinsPetItem: {
+		DisplayName: Plusins Pet Item
+		Tooltip: ""
+	}
+}
+PluginConditoins:{
+	OnDaytimeEmpress:""
+}

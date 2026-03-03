@@ -46,9 +46,9 @@ namespace Moreplugins.Content.Items.Accessories
         public override void AddRecipes()
         {
             CreateRecipe()
-                .AddIngredient(4988, 1)                         // 明胶水晶
-                .AddIngredient(ItemID.IronBar, 3)                // 3个铁锭
-                .AddTile(TileID.WorkBenches)                    // 工作台合成
+                .AddIngredient(ItemID.QueenSlimeCrystal, 1)
+                .AddIngredient(ItemID.IronBar, 3)
+                .AddTile(TileID.WorkBenches)
                 .Register();
         }
         #endregion
