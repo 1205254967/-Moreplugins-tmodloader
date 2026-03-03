@@ -21,6 +21,5 @@ Items: {
 		Tooltip: ""
 	}
 }
-PluginConditoins:{
-	OnDaytimeEmpress:""
-}
+
+PluginConditoins.OnDaytimeEmpress: ""

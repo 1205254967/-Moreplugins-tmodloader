@@ -1,353 +1,344 @@
-﻿LeafPlugins: {
-		DisplayName: 树叶
-		Tooltip:
-			'''
-			魔力伤害提升3%
-			魔法暴击率提升5%
-			法师武器面板伤害提升3点
-			最大魔力值提升40
-			[c/228B22:大自然的力量...]
-			'''
-	}
+BudPlugins: {
+	DisplayName: 花苞
+	Tooltip:
+		'''
+		每过十秒回复40点生命值
+		[c/00ff00:你两个耳朵中间的是不是丛林孢子我问你]
+		'''
+}
 
-	MassacrePlugins: {
-		DisplayName: 屠戮
-		Tooltip:
-			'''
-			增加2点防御力
-			获得1点生命再生
-			攻击敌人后使敌人流血
-			每秒对敌人造成4点伤害，持续5秒
-			敌怪身上会周期散发红色粒子
-			[c/ff0000:血债血偿...]
-			'''
-	}
+DetonatorPlugins: {
+	DisplayName: 雷管
+	Tooltip:
+		'''
+		角色死亡时爆炸
+		[c/7f7f7f:劳斯莱斯年审时被拉爆缸，检测公司：十年车龄已拖到维修厂 ——大象新闻]
+		'''
+}
 
-	MeatballPlugins: {
-		DisplayName: 肉球
-		Tooltip:
-			'''
-			让敌人的内脏炸裂开来
-			[c/ff0000:R18G]
-			'''
-	}
+DiscoPlugins: {
+	DisplayName: 迪斯科棱晶
+	Tooltip:
+		'''
+		生成一个迪斯科棱晶跟随在你身边
+		不占用哨兵栏位
+		[c/ff0000:打开][c/ff7f00:录][c/ffff00:音][c/00ff00:机][c/0000ff:～]
+		'''
+}
 
-	NightPlugins: {
-		DisplayName: 夜晚
-		Tooltip:
-			'''
-			提升2点基础面板伤害
-			3%伤害加成
-			暴击率提升3%
-			最大魔力值提升30
-			获得3点防御与3%伤害减免
-			攻击造成"着火了"减益
-			每过5秒，下次伤害提升40%
-			召唤物有15%概率造成150%伤害
-			免疫燃烧与着火了减益
-			[c/8a2be2:在那个寂寞的夜晚...]
-			'''
-	}
+DuskPlugins: {
+	DisplayName: 黄昏
+	Tooltip:
+		'''
+		提升5点武器基础面板伤害
+		伤害提升5%
+		暴击率提升5%
+		提升10%攻击速度
+		5防御力与5%的伤害减免
+		获得50点最大魔力值
+		2点魔力再生与生命再生
+		攻击使敌人受到着火了，霜冻与灵液减益
+		免疫燃烧与着火了减益
+		[c/ff8c00:黄昏思念未归之人...]
+		'''
+}
 
-	NothosaurPlugins: {
-		DisplayName: 幻龙
-		Tooltip:
-			'''
-			最大仆从数量 +2
-			水上行走
-			每过两秒发射追踪泡泡
-			[c/99CCFF:不要用肥皂水润滑!]
-			'''
-	}
+EnchantedPlusins: {
+	// DisplayName: Enchanted Plusins
+	// Tooltip: ""
+}
 
-	NuclearWarheadPlugins: {
-		DisplayName: 核弹
-		Tooltip:
-			'''
-			每过30秒发射一颗核弹
-			[c/008000:永不炸膛！]
-			'''
-	}
+EyePlugins: {
+	DisplayName: 不可疑的眼球
+	Tooltip: 第三只眼睛让你能看清黑暗
+}
 
-	OutdoorsurvivalkitPlugins: {
-		DisplayName: 户外生存装置
-		Tooltip:
-			'''
-			召唤一对不占用召唤栏位的双子魔眼
-			随机发射不同颜色的激光
-			[c/ff0000:红色激光造成50点伤害]
-			[c/00ff00:绿色激光造成20点伤害并附带诅咒狱火]
-			[c/ffff00:黄色激光造成15点伤害并附带灵液效果]
-			[c/0000ff:蓝色激光造成30点伤害并附带霜冻效果]
-			[c/00ff00:行走于荒野的郊狼！]
-			'''
-	}
+GelatinJellyPlugins: {
+	DisplayName: 明胶果冻
+	Tooltip:
+		'''
+		提升10%移动速度
+		提升10%冲刺速度
+		提升10%飞行时间
+		提升10%飞行速度
+		[c/ff69b4:更快更高更强！]
+		'''
+}
 
-	PurePlugins: {
-		DisplayName: 纯净
-		Tooltip:
-			'''
-			增加2最大仆从数量
-			召唤物获得5%乘算伤害加成
-			获得8点防御
-			获得8点护甲穿透
-			[c/ffd700:就像少女一般...]
-			'''
-	}
+GhostPlugins: {
+	DisplayName: 幽灵
+	Tooltip:
+		'''
+		攻击回复造成伤害的1%
+		[c/708090:抽魂夺命]
+		'''
+}
 
-	ShadowyeggplantPlugins: {
-		DisplayName: 阴暗的茄子
-		Tooltip:
-			'''
-			召唤物有10%概率造成200%的伤害
-			增加50点最大魔力值
-			增加1点魔力再生
-			[c/9932cc:为什么无机物会合成有机物？]
-			'''
-	}
+GiantfistPlugins: {
+	DisplayName: 巨人之拳
+	Tooltip:
+		'''
+		每分钟对某一敌怪发出强力一拳造成20000伤害
+		[c/ffff00:正义执行！]
+		'''
+}
 
-	ShamanPlugins: {
-		DisplayName: 萨满
-		Tooltip:
-			'''
-			对周围敌人进行触手攻击
-			伤害与原版相同，会造成暗影焰效果
-			[c/8a2be2:隐者之紫！]
-			'''
-	}
+GuidePlugins: {
+	DisplayName: 向导的祝福
+	Tooltip:
+		'''
+		获得20点最大生命值
+		武器伤害直接增加3点
+		[c/ff6b6b:你怎么忍心...]
+		'''
+}
 
-	SteelPlugins: {
-		DisplayName: 合金
-		Tooltip:
-			'''
-			伤害加成1%
-			护甲穿透1点
-			攻击速度提升3%
-			防御力提升1点
-			伤害减免1%
-			移动速度提升5%
-			工具使用速度提升5%
-			[c/8b4513:一切的开始...吗？]
-			'''
-	}
+HandPlugins: {
+	DisplayName: "[c/ffd700:手]"
+	Tooltip:
+		'''
+		在白天提供50%伤害加成
+		[c/ff6b6b:我见犹怜]
+		'''
+}
 
-	TanghuluPlugins: {
-		DisplayName: 冰糖葫芦
-		Tooltip:
-			'''
-			最大生命值提升400
-			防御力减半
-			[c/ff6b6b:打肿#充胖子]
-			'''
-	}
+HeartOfQueenPlugins: {
+	DisplayName: 女皇之心
+	Tooltip: 光之女皇的精华渗透进了此圣物。
+}
 
-	TerraHeartPlugins: {
-		DisplayName: 泰拉之心
-		Tooltip:
-			'''
-			[c/ffd700:武器面板伤害提升5点]
-			[c/ffd700:10点防御力与5%伤害减免]
-			[c/ffd700:乘算伤害加成10%]
-			[c/ffd700:暴击率提升8%]
-			[c/ffd700:2点魔力再生与生命再生]
-			[c/ffd700:40点最大生命值与魔力值]
-			[c/ffd700:2最大仆从数]
-			[c/ffd700:造成着火了，霜冻与灵液减益5秒]
-			[c/ffd700:每过15秒，下一次伤害提升300%]
-			[c/ffd700:并且会回复这个伤害的10%]
-			[c/ffd700:你掌控了整个世界的力量！]
-			'''
-	}
+HeartofSteelPlugins: {
+	// DisplayName: Heartof Steel Plugins
+	// Tooltip: ""
+}
 
-	ThornPlugins: {
-		DisplayName: 荆棘
-		Tooltip:
-			'''
-			反击敌人造成三倍伤害
-			[c/228B22:三倍奉还]
-			'''
-	}
+HolyPlugins: {
+	DisplayName: 缺角的十字架
+	Tooltip:
+		'''
+		3点防御
+		1最大仆从数
+		召唤物有30%概率造成150%伤害
+		5点护甲穿透
+		[c/ffff00:3个神圣锭合成就应该是3点防御！]
+		'''
+}
 
-	UnityPlugins: {
-		DisplayName: 团结
-		Tooltip:
-			'''
-			[c/9932cc:星辰之力令你一人成众]
-			[c/ff8c00:日耀之力令你坚硬如铁]
-			[c/00ff00:星璇之力令你无坚不摧]
-			[c/ff69b4:星云之力令你魔力充沛]
-			'''
-	}
+KaishakuninPlugins: {
+	DisplayName: 刽子手
+	Tooltip:
+		'''
+		每过5秒钟，下一次攻击伤害提升50%
+		[c/ff6b6b:拔刀斩！]
+		'''
+}
 
-	VibrissaPlugins: {
-		DisplayName: 触须
-		Tooltip:
-			'''
-			召唤两只可爱的小蜜
-			[c/f4a460:好痒，好痒]
-			'''
-	}
+LavaSeedPlugins: {
+	DisplayName: 熔岩之心
+	Tooltip:
+		'''
+		提升5点防御
+		提升5%的伤害减免
+		攻击会使敌人造成"着火了！"的减益
+		[c/ff4500:古道热肠]
+		'''
+}
 
-	PlusinsPetItem: {
-		DisplayName: 金属
-		Tooltip:
-			'''
-			召唤宠物金属
-			[c/8b0000:捐赠者物品]
-			'''
-	}
+LeafPlugins: {
+	DisplayName: 树叶
+	Tooltip:
+		'''
+		魔力伤害提升3%
+		魔法暴击率提升5%
+		法师武器面板伤害提升3点
+		最大魔力值提升40
+		[c/228B22:大自然的力量...]
+		'''
+}
 
-	BudPlugins: {
-		DisplayName: 花苞
-		Tooltip:
-			'''
-			每过十秒回复40点生命值
-			[c/00ff00:你两个耳朵中间的是不是丛林孢子我问你]
-			'''
-	}
+MassacrePlugins: {
+	DisplayName: 屠戮
+	Tooltip:
+		'''
+		增加2点防御力
+		获得1点生命再生
+		攻击敌人后使敌人流血
+		每秒对敌人造成4点伤害，持续5秒
+		敌怪身上会周期散发红色粒子
+		[c/ff0000:血债血偿...]
+		'''
+}
 
-	DetonatorPlugins: {
-		DisplayName: 雷管
-		Tooltip:
-			'''
-			角色死亡时爆炸
-			[c/7f7f7f:劳斯莱斯年审时被拉爆缸，检测公司：十年车龄已拖到维修厂 ——大象新闻]
-			'''
-	}
+MeatballPlugins: {
+	DisplayName: 肉球
+	Tooltip:
+		'''
+		让敌人的内脏炸裂开来
+		[c/ff0000:R18G]
+		'''
+}
 
-	DiscoPlugins: {
-		DisplayName: 迪斯科棱晶
-		Tooltip:
-			'''
-			生成一个迪斯科棱晶跟随在你身边
-			不占用哨兵栏位
-			[c/ff0000:打开][c/ff7f00:录][c/ffff00:音][c/00ff00:机][c/0000ff:～]
-			'''
-	}
+NightPlugins: {
+	DisplayName: 夜晚
+	Tooltip:
+		'''
+		提升2点基础面板伤害
+		3%伤害加成
+		暴击率提升3%
+		最大魔力值提升30
+		获得3点防御与3%伤害减免
+		攻击造成"着火了"减益
+		每过5秒，下次伤害提升40%
+		召唤物有15%概率造成150%伤害
+		免疫燃烧与着火了减益
+		[c/8a2be2:在那个寂寞的夜晚...]
+		'''
+}
 
-	DuskPlugins: {
-		DisplayName: 黄昏
-		Tooltip:
-			'''
-			提升5点武器基础面板伤害
-			伤害提升5%
-			暴击率提升5%
-			提升10%攻击速度
-			5防御力与5%的伤害减免
-			获得50点最大魔力值
-			2点魔力再生与生命再生
-			攻击使敌人受到着火了，霜冻与灵液减益
-			免疫燃烧与着火了减益
-			[c/ff8c00:黄昏思念未归之人...]
-			'''
-	}
+NothosaurPlugins: {
+	DisplayName: 幻龙
+	Tooltip:
+		'''
+		最大仆从数量 +2
+		水上行走
+		每过两秒发射追踪泡泡
+		[c/99CCFF:不要用肥皂水润滑!]
+		'''
+}
 
-	EyePlugins: {
-		DisplayName: 不可疑的眼球
-		Tooltip: 第三只眼睛让你能看清黑暗
-	}
+NuclearWarheadPlugins: {
+	DisplayName: 核弹
+	Tooltip:
+		'''
+		每过30秒发射一颗核弹
+		[c/008000:永不炸膛！]
+		'''
+}
 
-	GelatinJellyPlugins: {
-		DisplayName: 明胶果冻
-		Tooltip:
-			'''
-			提升10%移动速度
-			提升10%冲刺速度
-			提升10%飞行时间
-			提升10%飞行速度
-			[c/ff69b4:更快更高更强！]
-			'''
-	}
+OutdoorsurvivalkitPlugins: {
+	DisplayName: 户外生存装置
+	Tooltip:
+		'''
+		召唤一对不占用召唤栏位的双子魔眼
+		随机发射不同颜色的激光
+		[c/ff0000:红色激光造成50点伤害]
+		[c/00ff00:绿色激光造成20点伤害并附带诅咒狱火]
+		[c/ffff00:黄色激光造成15点伤害并附带灵液效果]
+		[c/0000ff:蓝色激光造成30点伤害并附带霜冻效果]
+		[c/00ff00:行走于荒野的郊狼！]
+		'''
+}
 
-	GhostPlugins: {
-		DisplayName: 幽灵
-		Tooltip:
-			'''
-			攻击回复造成伤害的1%
-			[c/708090:抽魂夺命]
-			'''
-	}
+PumpkinCandlePlugins: {
+	DisplayName: 南瓜蜡烛
+	Tooltip:
+		'''
+		你的无头骑士剑会直接攻击敌人！
+		[c/ffa500:医生为烈焰杰克南瓜们做了近视手术...]
+		'''
+}
 
-	GiantfistPlugins: {
-		DisplayName: 巨人之拳
-		Tooltip:
-			'''
-			每分钟对某一敌怪发出强力一拳造成20000伤害
-			[c/ffff00:正义执行！]
-			'''
-	}
+PurePlugins: {
+	DisplayName: 纯净
+	Tooltip:
+		'''
+		增加2最大仆从数量
+		召唤物获得5%乘算伤害加成
+		获得8点防御
+		获得8点护甲穿透
+		[c/ffd700:就像少女一般...]
+		'''
+}
 
-	GuidePlugins: {
-		DisplayName: 向导的祝福
-		Tooltip:
-			'''
-			获得20点最大生命值
-			武器伤害直接增加3点
-			[c/ff6b6b:你怎么忍心...]
-			'''
-	}
+ShadowyeggplantPlugins: {
+	DisplayName: 阴暗的茄子
+	Tooltip:
+		'''
+		召唤物有10%概率造成200%的伤害
+		增加50点最大魔力值
+		增加1点魔力再生
+		[c/9932cc:为什么无机物会合成有机物？]
+		'''
+}
 
-	HandPlugins: {
-		DisplayName: "[c/ffd700:手]"
-		Tooltip:
-			'''
-			在白天提供50%伤害加成
-			[c/ff6b6b:我见犹怜]
-			'''
-	}
+ShamanPlugins: {
+	DisplayName: 萨满
+	Tooltip:
+		'''
+		对周围敌人进行触手攻击
+		伤害与原版相同，会造成暗影焰效果
+		[c/8a2be2:隐者之紫！]
+		'''
+}
 
-	HeartOfQueenPlugins: {
-		DisplayName: 女皇之心
-		Tooltip: 光之女皇的精华渗透进了此圣物。
-	}
+SteelPlugins: {
+	DisplayName: 合金
+	Tooltip:
+		'''
+		伤害加成1%
+		护甲穿透1点
+		攻击速度提升3%
+		防御力提升1点
+		伤害减免1%
+		移动速度提升5%
+		工具使用速度提升5%
+		[c/8b4513:一切的开始...吗？]
+		'''
+}
 
-	HeartofSteelPlugins: {
-		// DisplayName: Heartof Steel Plugins
-		// Tooltip: ""
-	}
+TanghuluPlugins: {
+	DisplayName: 冰糖葫芦
+	Tooltip:
+		'''
+		最大生命值提升400
+		防御力减半
+		[c/ff6b6b:打肿#充胖子]
+		'''
+}
 
-	HolyPlugins: {
-		DisplayName: 缺角的十字架
-		Tooltip:
-			'''
-			3点防御
-			1最大仆从数
-			召唤物有30%概率造成150%伤害
-			5点护甲穿透
-			[c/ffff00:3个神圣锭合成就应该是3点防御！]
-			'''
-	}
+TerraHeartPlugins: {
+	DisplayName: 泰拉之心
+	Tooltip:
+		'''
+		[c/ffd700:武器面板伤害提升5点]
+		[c/ffd700:10点防御力与5%伤害减免]
+		[c/ffd700:乘算伤害加成10%]
+		[c/ffd700:暴击率提升8%]
+		[c/ffd700:2点魔力再生与生命再生]
+		[c/ffd700:40点最大生命值与魔力值]
+		[c/ffd700:2最大仆从数]
+		[c/ffd700:造成着火了，霜冻与灵液减益5秒]
+		[c/ffd700:每过15秒，下一次伤害提升300%]
+		[c/ffd700:并且会回复这个伤害的10%]
+		[c/ffd700:你掌控了整个世界的力量！]
+		'''
+}
 
-	KaishakuninPlugins: {
-		DisplayName: 刽子手
-		Tooltip:
-			'''
-			每过5秒钟，下一次攻击伤害提升50%
-			[c/ff6b6b:拔刀斩！]
-			'''
-	}
+ThornPlugins: {
+	DisplayName: 荆棘
+	Tooltip:
+		'''
+		反击敌人造成三倍伤害
+		[c/228B22:三倍奉还]
+		'''
+}
 
-	LavaSeedPlugins: {
-		Tooltip:
-			'''
-			提升5点防御
-			提升5%的伤害减免
-			攻击会使敌人造成"着火了！"的减益
-			[c/ff4500:古道热肠]
-			'''
-		DisplayName: 熔岩之心
-	}
+UnityPlugins: {
+	DisplayName: 团结
+	Tooltip:
+		'''
+		[c/9932cc:星辰之力令你一人成众]
+		[c/ff8c00:日耀之力令你坚硬如铁]
+		[c/00ff00:星璇之力令你无坚不摧]
+		[c/ff69b4:星云之力令你魔力充沛]
+		'''
+}
 
-	EnchantedPlusins: {
-		// DisplayName: Enchanted Plusins
-		// Tooltip: ""
-	}
-
-	PumpkinCandlePlugins: {
-		DisplayName: 南瓜蜡烛
-		Tooltip:
-			'''
-			你的无头骑士剑会直接攻击敌人！
-			[c/ffa500:医生为烈焰杰克南瓜们做了近视手术...]
-			'''
-	}
+VibrissaPlugins: {
+	DisplayName: 触须
+	Tooltip:
+		'''
+		召唤两只可爱的小蜜
+		[c/f4a460:好痒，好痒]
+		'''
+}

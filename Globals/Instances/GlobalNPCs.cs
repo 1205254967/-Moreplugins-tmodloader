@@ -1,5 +1,4 @@
-﻿using Moreplugins.Content.GlobalNPCs;
-using Moreplugins.Content.Items.Accessories;
+﻿using Moreplugins.Content.Items.Accessories;
 using Moreplugins.Content.Pets;
 using Moreplugins.Globals.Methods;
 using System;
