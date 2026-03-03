@@ -10,8 +10,8 @@ namespace Moreplugins.Content.Pets
 		public override void SetDefaults() {
 			Item.CloneDefaults(ItemID.ZephyrFish);
 
-			Item.shoot = ModContent.ProjectileType<PlusinsPetProjectile>();
-			Item.buffType = ModContent.BuffType<PlusinsPetBuff>();
+			Item.shoot = ProjectileType<PlusinsPetProjectile>();
+			Item.buffType = BuffType<PlusinsPetBuff>();
             Item.maxStack = 1;
             Item.rare = ItemRarityID.Green;
             Item.value = Item.buyPrice(gold: 3);

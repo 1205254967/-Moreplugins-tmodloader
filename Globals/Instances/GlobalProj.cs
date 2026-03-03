@@ -1,21 +1,41 @@
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
+using Moreplugins.Content.Items.Accessories;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.DataStructures;
 
-namespace Moreplugins
+namespace Moreplugins.Globals.Instances
 {
-    using Content.Items.Accessories;
-
-    /// <summary>
-    /// 处理核弹饰品导弹的爆炸效果
-    /// </summary>
-    public class NuclearWarheadProjectile : GlobalProjectile
+    public class PluginGlobalProj : GlobalProjectile
     {
+
+        public override bool InstancePerEntity => true;
+        public override void OnSpawn(Projectile projectile, IEntitySource source)
+        {
+            // 检查是否是彩虹水晶发射的射弹
+            if (projectile.type == ProjectileID.RainbowCrystalExplosion)
+            {
+                // 检查射弹的所有者是否装备了迪斯科棱晶
+                Player player = Main.player[projectile.owner];
+                if (player.active)
+                {
+                    DiscoPlayer modPlayer = player.GetModPlayer<DiscoPlayer>();
+                    if (modPlayer.discoEquipped)
+                    {
+                        // 设置射弹伤害为500
+                        projectile.damage = 240;
+                        projectile.netUpdate = true;
+                    }
+                }
+            }
+        }
+
+        //Scarlet: 这写法必定出事但是他妈的这段AI码也太他妈逆天了吧有时间再改吧
         public override void OnHitNPC(Projectile projectile, NPC target, NPC.HitInfo hit, int damageDone)
         {
             // 检查是否是核弹饰品发射的导弹（通过ai[2]标记）
+            
             if (projectile.ai[2] == 1f)
             {
                 // 获取发射导弹的玩家
