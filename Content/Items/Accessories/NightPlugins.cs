@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
-using Moreplugins.Core.Utilities;
+using Moreplugins.Content.Players;
 
 namespace Moreplugins.Content.Items.Accessories
 {
@@ -13,8 +13,6 @@ namespace Moreplugins.Content.Items.Accessories
     /// </summary>
     internal class NightPlugins : BasicPlugins
     {
-
-        #region 基础属性配置
         public override void SetDefaults()
         {
             Item.width = 32;
@@ -24,9 +22,7 @@ namespace Moreplugins.Content.Items.Accessories
             Item.rare = ItemRarityID.Orange; // 橙色稀有度
             Item.value = Item.sellPrice(gold: 5); // 售价5金币
         }
-        #endregion
 
-        #region 合成配方
         public override void AddRecipes()
         {
             // 第一个合成配方：使用屠戮
@@ -47,11 +43,9 @@ namespace Moreplugins.Content.Items.Accessories
                 .AddTile(TileID.DemonAltar)                                         // 恶魔祭坛合成
                 .Register();
         }
-        #endregion
-
-        #region 核心饰品效果
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
+            base.UpdateAccessory(player, hideVisual);
             // 提升2点基础面板伤害
             player.GetDamage(DamageClass.Generic).Flat += 2f;
             // 3%伤害加成
@@ -71,55 +65,7 @@ namespace Moreplugins.Content.Items.Accessories
             player.buffImmune[BuffID.Burning] = true;
 
             // 标记饰品已装备
-            player.GetModPlayer<NightPlayer>().nightEquipped = true;
-            player.MPPlayer().SoundAcc = true;
-        }
-        #endregion
-
-        #region 工具提示
-        public override void ModifyTooltips(List<TooltipLine> tooltips)
-        {
-            // 添加自定义提示文本
-        }
-        #endregion
-    }
-
-    /// <summary>
-    /// Night饰品的玩家类
-    /// </summary>
-    public class NightPlayer : ModPlayer
-    {
-        public bool nightEquipped; // 饰品是否装备
-        private int attackTimer;
-
-        public override void ResetEffects()
-        {
-            nightEquipped = false;
-        }
-
-        public override void PostUpdate()
-        {
-            if (nightEquipped)
-            {
-                // 每过五秒，下次伤害提升40%
-                attackTimer++;
-            }
-        }
-
-        public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
-        {
-            if (nightEquipped)
-            {
-                // 攻击造成“着火了”减益，持续4秒
-                target.AddBuff(BuffID.OnFire, 120); // 4秒 = 120帧
-
-                // 每过五秒，下次伤害提升40%
-                if (attackTimer >= 300) // 5秒 = 300帧
-                {
-                    modifiers.SourceDamage *= 1.4f;
-                    attackTimer = 0;
-                }
-            }
+            player.GetModPlayer<PluginsPlayer>().nightEquipped = true;
         }
     }
 }

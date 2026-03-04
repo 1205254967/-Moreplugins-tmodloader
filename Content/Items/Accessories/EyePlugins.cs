@@ -17,9 +17,9 @@ namespace Moreplugins.Content.Items.Accessories
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
+            base.UpdateAccessory(player, hideVisual);
             player.AddBuff(BuffID.NightOwl, 2);
             Lighting.AddLight(player.Center, TorchID.UltraBright);
-            base.UpdateAccessory(player, hideVisual);
         }
     }
 }

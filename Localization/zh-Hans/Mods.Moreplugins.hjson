@@ -6,6 +6,7 @@ Projectiles: {
 AccessorySlot: {
 	FunctionalSlot: 这是你的屁股
 	VanitySlot: 装扮 插件
+	DyeSlot: 染料
 }
 
 Buffs: {
@@ -24,6 +25,14 @@ Items: {
 			[c/8b0000:捐赠者物品]
 			'''
 	}
+}
+
+EnchantedPlusinsTooltip: {
+	Warding: （+2 防御力）
+	Lucky: （+2% 暴击率）
+	Menacing: （+2% 伤害）
+	Quick: （+2% 移动速度）
+	Violent: （+2% 近战速度）
 }
 
 // PluginConditoins.OnDaytimeEmpress: ""

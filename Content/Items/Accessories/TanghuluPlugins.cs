@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
-using Moreplugins.Core.Utilities;
+using Moreplugins.Content.Players;
 
 namespace Moreplugins.Content.Items.Accessories
 {
@@ -28,35 +28,10 @@ namespace Moreplugins.Content.Items.Accessories
         #region 核心饰品效果
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            // 标记饰品已装备
-            player.GetModPlayer<TanghuluPlayer>().tanghuluEquipped = true;
-            player.MPPlayer().SoundAcc = true;
+            base.UpdateAccessory(player, hideVisual);
+            player.statLifeMax2 += 400;
+            player.statDefense /= 2;
         }
         #endregion
-    }
-
-    /// <summary>
-    /// Tanghulu饰品的玩家类
-    /// </summary>
-    public class TanghuluPlayer : ModPlayer
-    {
-        public bool tanghuluEquipped; // 饰品是否装备
-
-        public override void ResetEffects()
-        {
-            tanghuluEquipped = false;
-        }
-
-        public override void UpdateEquips()
-        {
-            if (tanghuluEquipped)
-            {
-                // 最大生命值提升400
-                Player.statLifeMax2 += 400;
-
-                // 防御力减半
-                Player.statDefense /= 2;
-            }
-        }
     }
 }

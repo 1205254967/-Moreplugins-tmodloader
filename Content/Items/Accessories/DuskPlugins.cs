@@ -1,8 +1,8 @@
-using Moreplugins.Core.Utilities;
-using System.Collections.Generic;
+using Moreplugins.Content.Players;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+
 
 namespace Moreplugins.Content.Items.Accessories
 {
@@ -10,11 +10,7 @@ namespace Moreplugins.Content.Items.Accessories
     /// Dusk饰品 - 黄昏饰品
     /// </summary>
     internal class DuskPlugins : BasicPlugins
-
     {
-
-        #region 基础属性配置
-
         public override void SetDefaults()
         {
             Item.width = 32;
@@ -24,9 +20,6 @@ namespace Moreplugins.Content.Items.Accessories
             Item.rare = ItemRarityID.Yellow; // 黄色稀有度
             Item.value = Item.sellPrice(gold: 15); // 售价15金币
         }
-        #endregion
-
-        #region 合成配方
         public override void AddRecipes()
         {
             CreateRecipe()
@@ -37,9 +30,6 @@ namespace Moreplugins.Content.Items.Accessories
                 .AddTile(TileID.MythrilAnvil)                               // 秘银砧/山铜砧合成
                 .Register();
         }
-        #endregion
-
-        #region 核心饰品效果
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             // 提升5点武器基础面板伤害
@@ -65,42 +55,8 @@ namespace Moreplugins.Content.Items.Accessories
             player.buffImmune[BuffID.Burning] = true;
 
             // 标记饰品已装备
-            player.GetModPlayer<DuskPlayer>().duskEquipped = true;
-            player.MPPlayer().SoundAcc = true;
-        }
-        #endregion
-
-        #region 工具提示
-        public override void ModifyTooltips(List<TooltipLine> tooltips)
-        {
-            // 添加自定义提示文本
-        }
-        #endregion
-    }
-
-    /// <summary>
-    /// Dusk饰品的玩家类
-    /// </summary>
-    public class DuskPlayer : ModPlayer
-    {
-        public bool duskEquipped; // 饰品是否装备
-
-        public override void ResetEffects()
-        {
-            duskEquipped = false;
-        }
-
-        public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
-        {
-            if (duskEquipped)
-            {
-                // 攻击使敌人受到着火了减益，持续5秒
-                target.AddBuff(BuffID.OnFire, 300); // 5秒 = 300帧
-                // 攻击使敌人受到霜冻减益，持续5秒
-                target.AddBuff(BuffID.Frostburn, 300); // 5秒 = 300帧
-                // 攻击使敌人受到灵液减益，持续5秒
-                target.AddBuff(BuffID.Ichor, 300); // 5秒 = 300帧
-            }
+            base.UpdateAccessory(player, hideVisual);
+            player.GetModPlayer<PluginsPlayer>().duskEquipped = true;
         }
     }
 }

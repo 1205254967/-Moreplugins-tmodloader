@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Audio;
-using Moreplugins.Core.Utilities;
+using Moreplugins.Content.Players;
 
 namespace Moreplugins.Content.Items.Accessories
 {
@@ -14,7 +14,6 @@ namespace Moreplugins.Content.Items.Accessories
     internal class SteelPlugins : BasicPlugins
     {
 
-        #region 基础属性配置
         public override void SetDefaults()
         {
             Item.width = 32;
@@ -24,9 +23,7 @@ namespace Moreplugins.Content.Items.Accessories
             Item.rare = ItemRarityID.Blue; // 蓝色稀有度
             Item.value = Item.sellPrice(silver: 80); // 售价80银币
         }
-        #endregion
 
-        #region 合成配方
         public override void AddRecipes()
         {
             // 铁锭版本配方
@@ -41,11 +38,10 @@ namespace Moreplugins.Content.Items.Accessories
                 .AddTile(TileID.Anvils)                 // 铁砧/铅砧合成
                 .Register();
         }
-        #endregion
 
-        #region 核心饰品效果
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
+            base.UpdateAccessory(player, hideVisual);
             // 伤害加成1%
             player.GetDamage(DamageClass.Generic) += 0.01f;
 
@@ -66,16 +62,7 @@ namespace Moreplugins.Content.Items.Accessories
 
             // 工具使用速度提升5%
             player.pickSpeed -= 0.05f; // 原版逻辑：数值越小速度越快
-            player.MPPlayer().SoundAcc = true;
         }
-        #endregion
-
-        #region 工具提示
-        public override void ModifyTooltips(List<TooltipLine> tooltips)
-        {
-            // 添加自定义提示文本
-        }
-        #endregion
     }
 
 }

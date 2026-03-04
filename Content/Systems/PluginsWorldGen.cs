@@ -9,7 +9,7 @@ using Terraria.WorldBuilding;
 namespace Moreplugins.Content.Systems
 {
     // This example shows spawning rubble tiles during world generation.
-    public class PlusinsWorldGen : ModSystem
+    public class PluginsWorldGen : ModSystem
     {
         public override void ModifyWorldGenTasks(List<GenPass> tasks, ref double totalWeight)
         {

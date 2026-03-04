@@ -28,7 +28,6 @@ namespace Moreplugins.Core.GlobalInstance.NPCs
             //是的这里直接用的switch管的
             switch (npc.type)
             {
-                //全体恶魔眼掉落迪斯科棱镜
                 case NPCID.CataractEye:
                 case NPCID.CataractEye2:
                 case NPCID.DemonEye:
@@ -43,7 +42,7 @@ namespace Moreplugins.Core.GlobalInstance.NPCs
                 case NPCID.PurpleEye2:
                 case NPCID.SleepyEye:
                 case NPCID.SleepyEye2:
-                    npcLoot.AddLootCommon<EyePlugins>(10);
+                    npcLoot.AddLootCommon<EyePlugins>(100);
                     break;
                 //手，
                 case NPCID.HallowBoss:
@@ -66,7 +65,10 @@ namespace Moreplugins.Core.GlobalInstance.NPCs
                     npcLoot.AddLootCommon<GiantfistPlugins>(100);
                     break;
                 case NPCID.MoonLordCore:
-                    npcLoot.AddLootCommon<DiscoPlugins>(10);
+                    npcLoot.AddLootCommon<DiscoPlugins>(1);
+                    break;
+                case NPCID.Pumpking:
+                    npcLoot.AddLootCommon<PumpkinCandlePlugins>(5);
                     break;
 
             }

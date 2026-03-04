@@ -15,10 +15,6 @@ namespace Moreplugins
 {
     public class PluginsSlotExtra : Mod
     {
-        /// <summary>
-        /// motherfucker不要试图让vs的自动修正改这种东西了
-        /// 没必要
-        /// </summary>
         public static PluginsSlotExtra Instance;
         
         public override void Load() => Instance = this;
@@ -70,24 +66,21 @@ namespace Moreplugins
 
         public override void OnMouseHover(AccessorySlotType context)
         {
-            Main.hoverItemName = Language.GetTextValue(Mod.GetLocalizationKey($"AccessorySlot.{nameof(context)}"));
-            //motherfucker你们居然不直接赋值是吧
-            /*
+            //Main.hoverItemName = Language.GetTextValue(Mod.GetLocalizationKey($"AccessorySlot.{nameof(context)}"));
             switch (context)
             {
                 case AccessorySlotType.FunctionalSlot:
                     Main.hoverItemName = Language.GetTextValue("Mods.Moreplugins.AccessorySlot.FunctionalSlot");
                     break;
-                    
+
                 case AccessorySlotType.VanitySlot:
                     Main.hoverItemName = Language.GetTextValue("Mods.Moreplugins.AccessorySlot.VanitySlot");
                     break;
-                    
+
                 case AccessorySlotType.DyeSlot:
                     Main.hoverItemName = Language.GetTextValue("Mods.Moreplugins.AccessorySlot.DyeSlot");
                     break;
             }
-            */
         }
     }
 }

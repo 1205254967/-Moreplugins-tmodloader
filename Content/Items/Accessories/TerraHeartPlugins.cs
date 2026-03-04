@@ -1,9 +1,7 @@
-using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.DataStructures;
-using Moreplugins.Core.Utilities;
+using Moreplugins.Content.Players;
 
 namespace Moreplugins.Content.Items.Accessories
 {
@@ -12,8 +10,6 @@ namespace Moreplugins.Content.Items.Accessories
     /// </summary>
     internal class TerraHeartPlugins : BasicPlugins
     {
-
-        #region 基础属性配置
         public override void SetDefaults()
         {
             Item.width = 32;
@@ -23,9 +19,6 @@ namespace Moreplugins.Content.Items.Accessories
             Item.rare = ItemRarityID.Yellow; // 金色稀有度
             Item.value = Item.sellPrice(gold: 50); // 售价50金币
         }
-        #endregion
-
-        #region 合成配方
         public override void AddRecipes()
         {
             CreateRecipe()
@@ -35,11 +28,9 @@ namespace Moreplugins.Content.Items.Accessories
                 .AddTile(TileID.TinkerersWorkbench)               // 工匠作坊合成
                 .Register();
         }
-        #endregion
-
-        #region 核心饰品效果
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
+            base.UpdateAccessory(player, hideVisual);
             // 提升10点武器基础面板伤害
             player.GetDamage(DamageClass.Generic).Flat += 5f;
             // 10点防御力
@@ -62,73 +53,7 @@ namespace Moreplugins.Content.Items.Accessories
             player.maxMinions += 2;
 
             // 标记饰品已装备
-            player.GetModPlayer<TerraHeartPlayer>().terraHeartEquipped = true;
-            player.MPPlayer().SoundAcc = true;
-        }
-        #endregion
-    }
-
-    /// <summary>
-    /// TerraHeart饰品的玩家类
-    /// </summary>
-    public class TerraHeartPlayer : ModPlayer
-    {
-        public bool terraHeartEquipped; // 饰品是否装备
-        public int attackTimer;
-        public bool damageBoostActive;
-
-        public override void ResetEffects()
-        {
-            terraHeartEquipped = false;
-        }
-
-        public override void PostUpdate()
-        {
-            if (terraHeartEquipped)
-            {
-                // 每过15秒，下次伤害提升500%
-                attackTimer++;
-                if (attackTimer >= 900) // 15秒 = 900帧
-                {
-                    damageBoostActive = true;
-                }
-            }
-        }
-
-        private bool isBoostedHit; // 标记是否是提升后的伤害
-
-        public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
-        {
-            isBoostedHit = false;
-            if (terraHeartEquipped)
-            {
-                // 造成着火了，霜冻，灵液减益5秒
-                target.AddBuff(BuffID.OnFire, 300); // 5秒 = 300帧
-                target.AddBuff(BuffID.Frostburn, 300);
-                target.AddBuff(BuffID.Ichor, 300);
-
-                // 每过15秒，下次伤害提升500%
-                if (damageBoostActive)
-                {
-                    modifiers.SourceDamage *= 4f; // 500%提升
-                    damageBoostActive = false;
-                    attackTimer = 0;
-                    isBoostedHit = true;
-                }
-            }
-        }
-
-        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
-        {
-            if (terraHeartEquipped && isBoostedHit)
-            {
-                // 回复伤害的10%
-                int healAmount = (int)(damageDone * 0.1f);
-                if (healAmount > 0)
-                {
-                    Player.Heal(healAmount);
-                }
-            }
+            player.GetModPlayer<PluginsPlayer>().terraHeartEquipped = true;
         }
     }
 }

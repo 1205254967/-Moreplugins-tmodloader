@@ -8,14 +8,6 @@ namespace Moreplugins.Content.Items.Accessories
 {
     internal class PumpkinCandlePlugins : BasicPlugins
     {
-        // 重写纹理路径
-        public override string Texture => "Moreplugins/Content/Items/Accessories/PumpkinCandlePlugins";
-
-        public override void SetStaticDefaults()
-        {
-            // 静态默认值设置
-        }
-
         public override void SetDefaults()
         {
             Item.width = 32;

@@ -1,10 +1,9 @@
 using Microsoft.Xna.Framework;
-using Moreplugins.Core.Utilities;
 using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-
+using Moreplugins.Content.Players;
 
 namespace Moreplugins.Content.Items.Accessories
 {
@@ -13,8 +12,6 @@ namespace Moreplugins.Content.Items.Accessories
     /// </summary>
     internal class HolyPlugins : BasicPlugins
     {
-
-        #region 基础属性配置
         public override void SetDefaults()
         {
             Item.width = 32;
@@ -24,9 +21,7 @@ namespace Moreplugins.Content.Items.Accessories
             Item.rare = ItemRarityID.Pink; // 粉色稀有度
             Item.value = Item.sellPrice(gold: 5); // 售价5金币
         }
-        #endregion
 
-        #region 合成配方
         public override void AddRecipes()
         {
             CreateRecipe()
@@ -35,11 +30,10 @@ namespace Moreplugins.Content.Items.Accessories
                 .AddTile(TileID.MythrilAnvil)               // 秘银砧/山铜砧合成
                 .Register();
         }
-        #endregion
 
-        #region 核心饰品效果
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
+            base.UpdateAccessory(player, hideVisual);
             // 3点防御
             player.statDefense += 3;
             // 1最大仆从数
@@ -48,8 +42,6 @@ namespace Moreplugins.Content.Items.Accessories
             player.GetCritChance(DamageClass.Summon) += 0.3f;
             // 5点护甲穿透
             player.GetArmorPenetration(DamageClass.Summon) += 5;
-            player.MPPlayer().SoundAcc = true;
         }
-        #endregion
     }
 }

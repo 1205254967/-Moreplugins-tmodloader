@@ -5,7 +5,8 @@ Projectiles: {
 
 AccessorySlot: {
 	FunctionalSlot: This is YOU ASS
-	VanitySlot: DyeSlot:
+	VanitySlot: ""
+	DyeSlot: ""
 }
 
 Buffs: {
@@ -20,6 +21,14 @@ Items: {
 		DisplayName: Plusins Pet Item
 		Tooltip: ""
 	}
+}
+
+EnchantedPlusinsTooltip: {
+	Warding: ""
+	Lucky: ""
+	Menacing: ""
+	Quick: ""
+	violent: ""
 }
 
 PluginConditoins.OnDaytimeEmpress: ""

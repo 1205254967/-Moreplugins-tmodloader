@@ -1,9 +1,7 @@
-using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.DataStructures;
-using Moreplugins.Core.Utilities;
+using Moreplugins.Content.Players;
 
 namespace Moreplugins.Content.Items.Accessories
 {
@@ -12,8 +10,6 @@ namespace Moreplugins.Content.Items.Accessories
     /// </summary>
     internal class PurePlugins : BasicPlugins
     {
-
-        #region 基础属性配置
         public override void SetDefaults()
         {
             Item.width = 32;
@@ -23,9 +19,7 @@ namespace Moreplugins.Content.Items.Accessories
             Item.rare = ItemRarityID.Yellow; // 黄色稀有度
             Item.value = Item.sellPrice(gold: 20); // 售价20金币
         }
-        #endregion
 
-        #region 合成配方
         public override void AddRecipes()
         {
             CreateRecipe()
@@ -34,46 +28,23 @@ namespace Moreplugins.Content.Items.Accessories
                 .AddTile(TileID.MythrilAnvil)               // 秘银砧/山铜砧合成
                 .Register();
         }
-        #endregion
 
-        #region 核心饰品效果
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            // 标记饰品已装备
-            player.GetModPlayer<PurePlayer>().pureEquipped = true;
-            player.MPPlayer().SoundAcc = true;
-        }
-        #endregion
-    }
+            base.UpdateAccessory(player, hideVisual);
+            player.GetModPlayer<PluginsPlayer>().pureEquipped = true;
 
-    /// <summary>
-    /// Pure饰品的玩家类
-    /// </summary>
-    public class PurePlayer : ModPlayer
-    {
-        public bool pureEquipped; // 饰品是否装备
+            // 增加2最大仆从数量
+            player.maxMinions += 2;
 
-        public override void ResetEffects()
-        {
-            pureEquipped = false;
-        }
+            // 召唤物获得15%乘算伤害加成
+            player.GetDamage(DamageClass.Summon) *= 1.05f;
 
-        public override void UpdateEquips()
-        {
-            if (pureEquipped)
-            {
-                // 增加2最大仆从数量
-                Player.maxMinions += 2;
+            // 获得8点防御
+            player.statDefense += 8;
 
-                // 召唤物获得15%乘算伤害加成
-                Player.GetDamage(DamageClass.Summon) *= 1.05f;
-
-                // 获得8点防御
-                Player.statDefense += 8;
-
-                // 获得8点护甲穿透
-                Player.GetArmorPenetration(DamageClass.Summon) += 8;
-            }
+            // 获得8点护甲穿透
+            player.GetArmorPenetration(DamageClass.Summon) += 8;
         }
     }
 }

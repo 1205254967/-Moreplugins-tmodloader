@@ -1,8 +1,6 @@
-using Microsoft.Xna.Framework;
-using Moreplugins.Core.Utilities;
 using Terraria;
 using Terraria.ID;
-using Terraria.ModLoader;
+using Moreplugins.Content.Players;
 
 namespace Moreplugins.Content.Items.Accessories
 {
@@ -11,8 +9,6 @@ namespace Moreplugins.Content.Items.Accessories
     /// </summary>
     internal class GiantfistPlugins : BasicPlugins
     {
-
-        #region 基础属性配置
         public override void SetDefaults()
         {
             Item.width = 32;
@@ -22,90 +18,11 @@ namespace Moreplugins.Content.Items.Accessories
             Item.rare = ItemRarityID.Red;
             Item.value = Item.sellPrice(gold: 50);
         }
-        #endregion
 
-        #region 核心饰品效果
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.GetModPlayer<GiantfistPlayer>().giantfistEquipped = true;
-            player.MPPlayer().SoundAcc = true;
-        }
-        #endregion
-    }
-
-    /// <summary>
-    /// Giantfist饰品的玩家类
-    /// </summary>
-    public class GiantfistPlayer : ModPlayer
-    {
-        public bool giantfistEquipped;
-        private int punchTimer;
-
-        public override void ResetEffects()
-        {
-            giantfistEquipped = false;
-        }
-
-        public override void PostUpdate()
-        {
-            if (giantfistEquipped)
-            {
-                punchTimer++;
-                if (punchTimer >= 3600) // 1分钟 = 3600帧
-                {
-                    PunchEnemy();
-                    punchTimer = 0;
-                }
-            }
-        }
-
-        private void PunchEnemy()
-        {
-            // 寻找附近的敌人
-            NPC target = FindNearestEnemy();
-            if (target != null)
-            {
-                // 生成石巨人之拳的射弹
-                Projectile punch = Projectile.NewProjectileDirect(
-                    Player.GetSource_Accessory(Player.HeldItem),
-                    Player.Center,
-                    Vector2.Normalize(target.Center - Player.Center) * 10f,
-                    ProjectileID.GolemFist,
-                    20000, // 20000伤害
-                    10f,
-                    Player.whoAmI
-                );
-
-                // 设置射弹属性
-                punch.tileCollide = false;
-                punch.friendly = true;
-                punch.hostile = false;
-                punch.owner = Player.whoAmI;
-                punch.timeLeft = 600; // 10秒
-                punch.netUpdate = true;
-            }
-        }
-
-        private NPC FindNearestEnemy()
-        {
-            NPC target = null;
-            float minDistance = float.MaxValue;
-            float searchRadius = 1000f;
-
-            foreach (NPC npc in Main.npc)
-            {
-                if (npc.active && npc.CanBeChasedBy() && !npc.friendly)
-                {
-                    float distance = Vector2.Distance(Player.Center, npc.Center);
-                    if (distance < searchRadius && distance < minDistance)
-                    {
-                        minDistance = distance;
-                        target = npc;
-                    }
-                }
-            }
-
-            return target;
+            base.UpdateAccessory(player, hideVisual);
+            player.GetModPlayer<PluginsPlayer>().giantfistEquipped = true;
         }
     }
 }

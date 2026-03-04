@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Moreplugins.Core.Utilities;
+using Moreplugins.Content.Players;
 
 namespace Moreplugins.Content.Items.Accessories
 {
@@ -12,8 +12,6 @@ namespace Moreplugins.Content.Items.Accessories
     /// </summary>
     internal class LeafPlugins : BasicPlugins
     {
-
-        #region 基础属性配置
         public override void SetDefaults()
         {
             Item.width = 32;
@@ -23,9 +21,6 @@ namespace Moreplugins.Content.Items.Accessories
             Item.rare = ItemRarityID.Green; // 绿色稀有度
             Item.value = Item.sellPrice(gold: 3); // 售价3金币
         }
-        #endregion
-
-        #region 合成配方
         public override void AddRecipes()
         {
             CreateRecipe()
@@ -35,11 +30,10 @@ namespace Moreplugins.Content.Items.Accessories
                 .AddTile(TileID.WorkBenches)                  // 工作台合成
                 .Register();
         }
-        #endregion
 
-        #region 核心饰品效果
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
+            base.UpdateAccessory(player, hideVisual);
             // 魔力伤害提升3%
             player.GetDamage(DamageClass.Magic) += 0.03f;
 
@@ -51,15 +45,6 @@ namespace Moreplugins.Content.Items.Accessories
 
             // 最大魔力值提升40
             player.statManaMax2 += 40;
-            player.MPPlayer().SoundAcc = true;
         }
-        #endregion
-
-        #region 工具提示
-        public override void ModifyTooltips(List<TooltipLine> tooltips)
-        {
-            // 添加自定义提示文本
-        }
-        #endregion
     }
 }
