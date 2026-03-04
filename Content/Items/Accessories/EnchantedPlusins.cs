@@ -69,7 +69,7 @@ namespace Moreplugins.Content.Items.Accessories
             player.moveSpeed += quick / 100f;
 
             ref float genericAttackSpeed = ref player.GetAttackSpeed<GenericDamageClass>();
-            genericAttackSpeed += lucky;
+            genericAttackSpeed += violent;
         }
     }
 
