@@ -1,4 +1,5 @@
 ﻿using Moreplugins.Content.Players;
+using ReLogic.Utilities;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
@@ -32,6 +33,10 @@ namespace Moreplugins.Content.Items.Accessories
             for (int i = 0; i < player.armor.Length; i++)
             {
                 Item acc = player.armor[i];
+                if (i >= 13 && i <= 19)
+                {
+                    continue;
+                }
                 if (acc.prefix == PrefixID.Warding)
                 {
                     warding += 2;
