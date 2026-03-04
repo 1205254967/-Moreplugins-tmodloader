@@ -81,7 +81,7 @@ namespace Moreplugins.Content.Items.Accessories
         {
             Player player = Main.LocalPlayer;
 
-            
+            bool[] TooltipBool = [true, true, true, true, true];
             int WardingFlavorTooltipIndex = tooltips.FindIndex(line => line.Name == "PrefixAccDefense" && line.Mod == "Terraria");
             int LuckyFlavorTooltipIndex = tooltips.FindIndex(line => line.Name == "PrefixAccCritChance" && line.Mod == "Terraria");
             int MenacingFlavorTooltipIndex = tooltips.FindIndex(line => line.Name == "PrefixAccDamage" && line.Mod == "Terraria");
@@ -100,19 +100,20 @@ namespace Moreplugins.Content.Items.Accessories
 
                     Item acc = player.armor[i];
 
-
                     if (acc.prefix == PrefixID.Warding)
                     {
                         TooltipLine flavorTooltip = new TooltipLine(Mod, "WardingPrefixTooltipName", wardingvalue);
                         if (WardingFlavorTooltipIndex + 1 == 0) { continue; }
-                        tooltips.Insert(WardingFlavorTooltipIndex + 1, flavorTooltip);
+                        if (TooltipBool[0]) { tooltips.Insert(WardingFlavorTooltipIndex + 1, flavorTooltip); }
+                        TooltipBool[0] = false;
                         continue;
                     }
                     if (acc.prefix == PrefixID.Lucky)
                     {
                         TooltipLine flavorTooltip = new TooltipLine(Mod, "LuckyPrefixTooltipName", luckyvalue);
                         if (LuckyFlavorTooltipIndex + 1 == 0) { continue; }
-                        tooltips.Insert(LuckyFlavorTooltipIndex + 1, flavorTooltip);
+                        if (TooltipBool[1]) { tooltips.Insert(LuckyFlavorTooltipIndex + 1, flavorTooltip); }
+                        TooltipBool[1] = false;
                         continue;
                     }
                     if (acc.prefix == PrefixID.Menacing)
@@ -120,21 +121,24 @@ namespace Moreplugins.Content.Items.Accessories
 
                         TooltipLine flavorTooltip = new TooltipLine(Mod, "MenacingPrefixTooltipName", menacingvalue);
                         if (MenacingFlavorTooltipIndex + 1 == 0) { continue; }
-                        tooltips.Insert(MenacingFlavorTooltipIndex + 1, flavorTooltip);
+                        if (TooltipBool[2]){ tooltips.Insert(MenacingFlavorTooltipIndex + 1, flavorTooltip); }
+                        TooltipBool[2] = false;
                         continue;
                     }
                     if (acc.prefix == PrefixID.Quick2)
                     {
                         TooltipLine flavorTooltip = new TooltipLine(Mod, "QuickPrefixTooltipName", quickvalue);
                         if (QuickFlavorTooltipIndex + 1 == 0) { continue; }
-                        tooltips.Insert(QuickFlavorTooltipIndex + 1, flavorTooltip);
+                        if (TooltipBool[3]) { tooltips.Insert(QuickFlavorTooltipIndex + 1, flavorTooltip); }
+                        TooltipBool[3] = false;
                         continue;
                     }
                     if (acc.prefix == PrefixID.Violent)
                     {
                         TooltipLine flavorTooltip = new TooltipLine(Mod, "ViolentPrefixTooltipName", violentvalue);
                         if (ViolentFlavorTooltipIndex + 1 == 0) { continue; }
-                        tooltips.Insert(ViolentFlavorTooltipIndex + 1, flavorTooltip);
+                        if (TooltipBool[4]) { tooltips.Insert(ViolentFlavorTooltipIndex + 1, flavorTooltip); }
+                        TooltipBool[4] = false;
                         continue;
                     }
                 }
