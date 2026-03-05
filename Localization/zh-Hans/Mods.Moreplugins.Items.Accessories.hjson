@@ -352,3 +352,18 @@ VibrissaPlugins: {
 		[c/f4a460:好痒，好痒]
 		'''
 }
+
+MushroomPlugins: {
+	// DisplayName: Mushroom Plugins
+	// Tooltip: ""
+}
+
+WoodPlugins: {
+	// DisplayName: Wood Plugins
+	// Tooltip: ""
+}
+
+MagicMirrorPlugins: {
+	// DisplayName: Magic Mirror Plugins
+	// Tooltip: ""
+}

@@ -162,3 +162,18 @@ VibrissaPlugins: {
 	DisplayName: Vibrissa Plugins
 	Tooltip: ""
 }
+
+MushroomPlugins: {
+	DisplayName: Mushroom Plugins
+	Tooltip: ""
+}
+
+WoodPlugins: {
+	DisplayName: Wood Plugins
+	Tooltip: ""
+}
+
+MagicMirrorPlugins: {
+	DisplayName: Magic Mirror Plugins
+	Tooltip: ""
+}
