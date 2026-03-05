@@ -44,8 +44,12 @@ DuskPlugins: {
 }
 
 EnchantedPlusins: {
-	// DisplayName: Enchanted Plusins
-	// Tooltip: ""
+	DisplayName: "[c/9696ff:附魔]"
+	Tooltip:
+		'''
+		使你的四级词缀效果获得强化
+		[c/9696ff:你被强化了...]
+		'''
 }
 
 EyePlugins: {
@@ -108,8 +112,14 @@ HeartOfQueenPlugins: {
 }
 
 HeartofSteelPlugins: {
-	// DisplayName: Heartof Steel Plugins
-	// Tooltip: ""
+	DisplayName: 心之钢
+	Tooltip:
+		'''
+		5%乘算伤害加成
+		2生命再生
+		治疗药水冷却时间减少25%
+		[c/ffffoa:坚强的意志！]
+		'''
 }
 
 HolyPlugins: {

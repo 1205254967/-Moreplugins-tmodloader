@@ -32,7 +32,7 @@ EnchantedPlusinsTooltip: {
 	Lucky: （+2% 暴击率）
 	Menacing: （+2% 伤害）
 	Quick: （+2% 移动速度）
-	// violent: ""
+	violent: （+2%近战速度）
 }
 
 // PluginConditoins.OnDaytimeEmpress: ""
