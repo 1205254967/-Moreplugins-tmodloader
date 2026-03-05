@@ -14,7 +14,6 @@ namespace Moreplugins.Content.Items.Accessories
         {
             Item.width = 32;
             Item.height = 32;
-            Item.maxStack = 1;
             Item.accessory = true; // 标记为饰品
             Item.rare = ItemRarityID.Green; // 绿色稀有度
             Item.value = Item.sellPrice(gold: 2); // 售价2金币

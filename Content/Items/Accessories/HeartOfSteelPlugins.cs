@@ -18,10 +18,8 @@ namespace MorePlugins.Content.Items.Accessories
         // 物品基础属性（极简写法，无冗余配置）
         public override void SetDefaults()
         {
-            // 尺寸：原版32x32，用Vector2统一配置
-            Item.Size = new Microsoft.Xna.Framework.Vector2(32);
-            // 核心属性：仅保留必要项，避免无效配置触发Bug
-            Item.maxStack = 1;          // 饰品不可堆叠
+            Item.width = 32;
+            Item.height = 32;
             Item.accessory = true;      // 标记为饰品（原版必需）
             Item.rare = ItemRarityID.Yellow; // 黄色稀有度
             Item.value = Item.sellPrice(gold: 15); // 15金币价值

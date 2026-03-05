@@ -8,8 +8,7 @@ namespace Moreplugins.Content.Items.Accessories
         public override void SetDefaults()
         {
             Item.width = 32;
-            Item.height = 32;
-            Item.maxStack = 1;
+            Item.height = 32;;
             Item.accessory = true;
             Item.rare = ItemRarityID.Blue;
             Item.value = Item.sellPrice(gold: 5);
