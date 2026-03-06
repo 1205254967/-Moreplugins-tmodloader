@@ -6,7 +6,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.WorldBuilding;
 
-namespace Moreplugins.Content.Systems
+namespace Moreplugins.Core.MPWorldGen
 {
     // This example shows spawning rubble tiles during world generation.
     public class PluginsWorldGen : ModSystem
@@ -32,7 +32,7 @@ namespace Moreplugins.Content.Systems
         {
             progress.Message = (string)Language.GetText("Mods.Moreplugins.MapObject.EnchantedPlusinsShrine");
 
-            int[] tileTypes = [ModContent.TileType<EnchantedPlusinsShrine>()];
+            int[] tileTypes = [TileType<EnchantedPlusinsShrine>()];
 
             // To not be annoying, we'll only spawn 15 Example Rubble near the spawn point.
             // This example uses the Try Until Success approach: https://github.com/tModLoader/tModLoader/wiki/World-Generation#try-until-success
@@ -49,7 +49,7 @@ namespace Moreplugins.Content.Systems
                         break;
                     }
                     int x = WorldGen.genRand.Next(Main.maxTilesX / 2 - 1800, Main.maxTilesX / 2 + 1800);
-                    int y = WorldGen.genRand.Next((int)GenVars.rockLayerLow , (int)GenVars.lavaLine);
+                    int y = WorldGen.genRand.Next((int)GenVars.rockLayerLow , GenVars.lavaLine);
                     int tileType = WorldGen.genRand.Next(tileTypes);
                     int placeStyle = WorldGen.genRand.Next(1);
 

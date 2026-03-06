@@ -8,7 +8,10 @@
 		
 	</PropertyGroup>
 	<ItemGroup>
-	  <Folder Include="Core\Class\" />
+	  <AdditionalFiles Remove="Core\Class\**" />
+	  <Compile Remove="Core\Class\**" />
+	  <EmbeddedResource Remove="Core\Class\**" />
+	  <None Remove="Core\Class\**" />
 	</ItemGroup>
 
 	<!-- References -->
