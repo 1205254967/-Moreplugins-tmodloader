@@ -367,3 +367,8 @@ MagicMirrorPlugins: {
 	// DisplayName: Magic Mirror Plugins
 	// Tooltip: ""
 }
+
+Gingerbreadman: {
+	// DisplayName: Gingerbreadman
+	// Tooltip: ""
+}

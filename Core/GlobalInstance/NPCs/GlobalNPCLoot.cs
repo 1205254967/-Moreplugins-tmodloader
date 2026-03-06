@@ -47,6 +47,7 @@ namespace Moreplugins.Core.GlobalInstance.NPCs
                 //手，
                 case NPCID.HallowBoss:
                     npcLoot.Add(ItemDropRule.ByCondition(new DaytimeCondition(), ItemType<HandPlugins>(), 1, 1, 1));
+                    npcLoot.AddLootCommon<HeartOfQueenPlugins>(1);
                     break;
                 case NPCID.Plantera:
                     npcLoot.AddLootCommon<BudPlugins>(10);
@@ -70,7 +71,9 @@ namespace Moreplugins.Core.GlobalInstance.NPCs
                 case NPCID.Pumpking:
                     npcLoot.AddLootCommon<PumpkinCandlePlugins>(5);
                     break;
-
+                case NPCID.GingerbreadMan:
+                    npcLoot.AddLootCommon<GingerbreadmanPlugins>(20);
+                    break;
             }
         }
     }
