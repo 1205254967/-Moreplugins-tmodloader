@@ -182,3 +182,8 @@ Gingerbreadman: {
 	DisplayName: Gingerbreadman
 	Tooltip: ""
 }
+
+GingerbreadmanPlugins: {
+	DisplayName: Gingerbreadman Plugins
+	Tooltip: ""
+}
