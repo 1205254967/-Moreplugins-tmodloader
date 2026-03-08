@@ -6,6 +6,8 @@ using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Moreplugins.Content.Players;
 using Moreplugins.Core.Utilities;
+using Moreplugins.Core.GlobalInstance.Items;
+using Terraria.Localization;
 
 namespace Moreplugins.Content.Items.Accessories
 {
@@ -14,50 +16,41 @@ namespace Moreplugins.Content.Items.Accessories
     /// </summary>
     public class NightPlugins : BasicPlugins
     {
+        private int FlatDamageAndCrits = 5;
+        private float DamageAndDR = 0.05f;
+        private float SummonCrit = 0.30f;
+        private float SummonCritDamage = 1.5f;
+        private int MaxMana = 30;
         public override void SetDefaults()
         {
             Item.rare = ItemRarityID.Orange; // 橙色稀有度
             Item.value = Item.sellPrice(gold: 5); // 售价5金币
+            Item.defense = 3;
             base.SetDefaults();    
         }
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(FlatDamageAndCrits, DamageAndDR.ToPercent(), SummonCrit.ToPercent(), SummonCritDamage.ToPercent(), MaxMana);
 
         public override void AddRecipes()
         {
-            // 第一个合成配方：使用屠戮
             CreateRecipe()
-                .AddIngredient(ItemType<LeafPlugins>(), 1)       // 1个树叶
-                .AddIngredient(ItemType<LavaSeedPlugins>(), 1)    // 1个熔岩之心
-                .AddIngredient(ItemType<KaishakuninPlugins>(), 1) // 1个刽子手
-                .AddIngredient(ItemType<MassacrePlugins>(), 1)    // 1个屠戮
-                .AddTile(TileID.DemonAltar)                                         // 恶魔祭坛合成
-                .Register();
-
-            // 第二个合成配方：使用阴暗的茄子
-            CreateRecipe()
-                .AddIngredient(ItemType<LeafPlugins>(), 1)       // 1个树叶
-                .AddIngredient(ItemType<LavaSeedPlugins>(), 1)    // 1个熔岩之心
-                .AddIngredient(ItemType<KaishakuninPlugins>(), 1) // 1个刽子手
-                .AddIngredient(ItemType<ShadowyeggplantPlugins>(), 1) // 1个阴暗的茄子
-                .AddTile(TileID.DemonAltar)                                         // 恶魔祭坛合成
+                .AddIngredient(ItemType<LeafPlugins>())
+                .AddIngredient(ItemType<LavaSeedPlugins>())
+                .AddIngredient(ItemType<KaishakuninPlugins>()) 
+                .AddRecipeGroup(PluginRecipeGroup.AnyEvilPlugin)
+                .AddTile(TileID.DemonAltar)
                 .Register();
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             base.UpdateAccessory(player, hideVisual);
-            // 提升2点基础面板伤害
-            player.GetDamage(DamageClass.Generic).Flat += 2f;
-            // 3%伤害加成
-            player.GetDamage(DamageClass.Generic) += 0.03f;
-            // 暴击率提升3%
-            player.GetCritChance(DamageClass.Generic) += 3f;
-            // 获得3点防御
-            player.statDefense += 3;
-            // 3%伤害减免
-            player.endurance += 0.03f;
-            // 召唤物有15%概率造成150%伤害
-            player.GetDamage(DamageClass.Summon) += 0.5f;
+            player.GetDamage<GenericDamageClass>() += FlatDamageAndCrits;
+            player.GetCritChance<GenericDamageClass>() += FlatDamageAndCrits;
+            player.GetDamage<GenericDamageClass>() += DamageAndDR;
+            player.endurance += DamageAndDR;
+            player.MPPlayer().summonCritChance =SummonCrit;
+            player.MPPlayer().summonCritDamageMultipler = SummonCritDamage;
             // 最大魔力值提升30
-            player.statManaMax2 += 30;
+            player.statManaMax2 += MaxMana;
             // 免疫燃烧与着火了减益
             player.buffImmune[BuffID.OnFire] = true;
             player.buffImmune[BuffID.Burning] = true;

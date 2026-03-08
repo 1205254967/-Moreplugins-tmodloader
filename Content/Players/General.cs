@@ -87,6 +87,12 @@ namespace Moreplugins.Content.Players
         public bool gingerbreadmanPluginsEquipped;
         public bool hasUsedEffect = false;
         public int dieTimer;
+
+        //神圣
+        public bool holyPlugin = false;
+
+        public float summonCritChance = 0f;
+        public float summonCritDamageMultipler = 0f;
         #endregion
 
         public override void ResetEffects()
@@ -115,6 +121,8 @@ namespace Moreplugins.Content.Players
             terraHeartEquipped = false;
             vibrissaEquipped = false;
             gingerbreadmanPluginsEquipped = false;
+            summonCritDamageMultipler = 0f;
+            summonCritChance = 0f;
         }
         public override bool PreKill(double damage, int hitDirection, bool pvp, ref bool playSound, ref bool genDust, ref PlayerDeathReason damageSource)
         {

@@ -1,6 +1,6 @@
+//Global using static了ModContent，这样不需要每次调用tmod内容的时候要多
 using Terraria;
 using Terraria.ID;
-using Moreplugins.Content.Players;
 using Moreplugins.Core.Utilities;
 
 namespace Moreplugins.Content.Items.Accessories

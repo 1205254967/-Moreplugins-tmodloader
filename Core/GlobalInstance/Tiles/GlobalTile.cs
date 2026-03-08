@@ -4,7 +4,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Moreplugins.Common.Global
+namespace Moreplugins.Core.GlobalInstance.Tiles
 {
     internal class GlobalMushroom : GlobalTile
     {
@@ -15,9 +15,9 @@ namespace Moreplugins.Common.Global
             int y = j * 16;
             Tile tile = Main.tile[i, j];
 
-            if (type == Terraria.ID.TileID.Plants && tile.TileFrameX == 18 * 8 && Main.rand.NextBool(100))
+            if (type == TileID.Plants && tile.TileFrameX == 18 * 8 && Main.rand.NextBool(100))
             {
-                Item.NewItem(new EntitySource_TileBreak(i, j) ,x, y, 16, 16, ModContent.ItemType<MushroomPlugins>(), 1);
+                Item.NewItem(new EntitySource_TileBreak(i, j) ,x, y, 16, 16, ItemType<MushroomPlugins>(), 1);
             }
         }
     }

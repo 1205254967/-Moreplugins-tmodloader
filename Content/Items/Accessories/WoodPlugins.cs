@@ -16,24 +16,20 @@ namespace Moreplugins.Content.Items.Accessories
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            woodPluginsTime++;
-            if(woodPluginsTime >= 1800)
-                if(Main.rand.NextBool(4))
-                {
-                    player.AddBuff(BuffID.Tipsy, 1800);
-                    woodPluginsTime = 0;
-                }
-                else
-                {
-                    woodPluginsTime = 0;
-                }
-
             base.UpdateAccessory(player, hideVisual);
+            woodPluginsTime++;
+            if (woodPluginsTime < GetSeconds(30))
+                return;
+            if (Main.rand.NextBool(4))
+                player.AddBuff(BuffID.Tipsy, GetSeconds(30));
+
+            woodPluginsTime = 0;
+
         }
         public override void AddRecipes()
         {
             CreateRecipe()
-                .AddRecipeGroup("Wood", 10)
+                .AddRecipeGroup(RecipeGroupID.Wood, 10)
                 .AddTile(TileID.WorkBenches)
                 .Register();
         }

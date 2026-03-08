@@ -13,6 +13,9 @@
 	  <EmbeddedResource Remove="Core\Class\**" />
 	  <None Remove="Core\Class\**" />
 	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Common\Global\" />
+	</ItemGroup>
 
 	<!-- References -->
 

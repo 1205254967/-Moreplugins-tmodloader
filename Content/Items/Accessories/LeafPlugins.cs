@@ -31,16 +31,9 @@ namespace Moreplugins.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             base.UpdateAccessory(player, hideVisual);
-            // 魔力伤害提升3%
-            player.GetDamage(DamageClass.Magic) += 0.03f;
-
-            // 魔法暴击率提升5%
-            player.GetCritChance(DamageClass.Magic) += 5f;
-
-            // 法师武器面板伤害提升3点
-            player.GetDamage(DamageClass.Generic).Flat += 3f;
-
-            // 最大魔力值提升40
+            player.GetDamage<MagicDamageClass>() += 0.03f;
+            player.GetCritChance<MagicDamageClass>() += 5f;
+            player.GetDamage<MagicDamageClass>().Flat += 3;
             player.statManaMax2 += 40;
         }
     }

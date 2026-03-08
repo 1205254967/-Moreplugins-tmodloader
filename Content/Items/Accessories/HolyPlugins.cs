@@ -4,6 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Moreplugins.Content.Players;
+using Moreplugins.Core.Utilities;
 
 namespace Moreplugins.Content.Items.Accessories
 {
@@ -36,8 +37,10 @@ namespace Moreplugins.Content.Items.Accessories
             // 1最大仆从数
             player.maxMinions += 1;
             // 召唤物有30%概率造成150%伤害
-            //这他妈根本不会生效
-            player.GetCritChance(DamageClass.Summon) += 0.3f;
+            //Scarlet: ↑改写成了一个独立的召唤物伤害机制
+            //目前是直接赋值而不是加减，因为我也不知道你们要不要考虑叠加功能
+            player.MPPlayer().summonCritChance = 0.3f;
+            player.MPPlayer().summonCritDamageMultipler = 1.5f;
             // 5点护甲穿透
             player.GetArmorPenetration(DamageClass.Summon) += 5;
         }

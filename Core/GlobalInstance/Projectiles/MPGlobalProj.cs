@@ -2,6 +2,7 @@
 using Moreplugins.Content.Items.Accessories;
 using Moreplugins.Content.Players;
 using Moreplugins.Core.Utilities;
+using System;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
@@ -31,6 +32,26 @@ namespace Moreplugins.Core.GlobalInstance.Projectiles
                 }
             }
         }
+        public override void ModifyHitNPC(Projectile projectile, NPC target, ref NPC.HitModifiers modifiers)
+        {
+            Player owner = Main.player[projectile.owner];
+            PluginPlayer modPlayer = owner.MPPlayer();
+            if ((projectile.minion || projectile.sentry) && modPlayer.holyPlugin)
+            {
+                ModifySummonHit(owner, modPlayer, target, ref modifiers);
+            }
+        }
+
+        private void ModifySummonHit(Player owner, PluginPlayer modPlayer, NPC target, ref NPC.HitModifiers modifiers)
+        {
+            float summonCritChance = modPlayer.summonCritChance;
+            if(summonCritChance > 0)
+            {
+                if(Main.rand.NextFloat() < summonCritChance || summonCritChance >= 1f)
+                    modifiers.SourceDamage *= modPlayer.summonCritDamageMultipler;
+            }
+        }
+
         //Scarlet: 这写法必定出事但是他妈的这段AI码也太他妈逆天了吧有时间再改吧
         public override void OnHitNPC(Projectile projectile, NPC target, NPC.HitInfo hit, int damageDone)
         {

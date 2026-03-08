@@ -15,6 +15,7 @@ namespace Moreplugins.Content.Items.Accessories
         {
             Item.rare = ItemRarityID.Yellow; // 金色稀有度
             Item.value = Item.sellPrice(gold: 50); // 售价50金币
+            Item.defense = 10;
             base.SetDefaults();
         }
         public override void AddRecipes()
@@ -31,8 +32,6 @@ namespace Moreplugins.Content.Items.Accessories
             base.UpdateAccessory(player, hideVisual);
             // 提升10点武器基础面板伤害
             player.GetDamage(DamageClass.Generic).Flat += 5f;
-            // 10点防御力
-            player.statDefense += 10;
             // 10点伤害减免
             player.endurance += 0.05f;
             // 乘算伤害加成15%
