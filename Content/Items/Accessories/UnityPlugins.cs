@@ -16,31 +16,25 @@ namespace Moreplugins.Content.Items.Accessories
     {
         public override void SetDefaults()
         {
+            base.SetDefaults();
             Item.rare = ItemRarityID.Red; // 红色稀有度
             Item.value = Item.sellPrice(gold: 100);
-            base.SetDefaults();
+            Item.defense = 25;
+            Item.manaIncrease = 100;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             base.UpdateAccessory(player, hideVisual);
             player.MPPlayer().unityEquipped = true;
-
-            // 增加2仆从栏
             player.maxMinions += 2;
-
-            // 25点防御力
-            player.statDefense += 25;
             // 15%的护甲减免
             player.endurance += 0.15f;
             // 20%的暴击率
             player.GetCritChance(DamageClass.Generic) += 20f;
             // 30%的伤害加成
             player.GetDamage(DamageClass.Generic) += 0.3f;
-            // 5点魔力再生
             player.manaRegen += 5;
-            // 100点最大魔力值
-            player.statManaMax2 += 150;
         }
 
         public override void AddRecipes()

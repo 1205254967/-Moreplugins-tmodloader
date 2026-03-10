@@ -1,16 +1,6 @@
-﻿using Microsoft.Xna.Framework;
-using Moreplugins.Content.Players;
-using Moreplugins.Core.Utilities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Moreplugins.Core.Utilities;
 using Terraria;
-using Terraria.DataStructures;
 using Terraria.ID;
-using Terraria.ModLoader;
-using Terraria.WorldBuilding;
 
 namespace Moreplugins.Content.Items.Accessories
 {

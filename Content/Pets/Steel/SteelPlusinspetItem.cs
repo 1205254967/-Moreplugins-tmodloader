@@ -3,15 +3,15 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Moreplugins.Content.Pets
+namespace Moreplugins.Content.Pets.Steel
 {
-	public class PlusinsPetItem : ModItem
+	public class SteelPlusinsPetItem : ModItem
 	{
 		public override void SetDefaults() {
 			Item.CloneDefaults(ItemID.ZephyrFish);
 
-			Item.shoot = ProjectileType<PlusinsPetProjectile>();
-			Item.buffType = BuffType<PlusinsPetBuff>();
+			Item.shoot = ProjectileType<SteelPlusinsPetProjectile>();
+			Item.buffType = BuffType<SteelPlusinsPetBuff>();
             Item.maxStack = 1;
             Item.rare = ItemRarityID.Green;
             Item.value = Item.buyPrice(gold: 3);

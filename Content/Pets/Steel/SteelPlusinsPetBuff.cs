@@ -1,9 +1,9 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Moreplugins.Content.Pets
+namespace Moreplugins.Content.Pets.Steel
 {
-    public class PlusinsPetBuff : ModBuff
+    public class SteelPlusinsPetBuff : ModBuff
     {
         public override void SetStaticDefaults()
         {
@@ -14,7 +14,7 @@ namespace Moreplugins.Content.Pets
         public override void Update(Player player, ref int buffIndex)
         {
             bool unused = false;
-            player.BuffHandle_SpawnPetIfNeededAndSetTime(buffIndex, ref unused, ModContent.ProjectileType<PlusinsPetProjectile>());
+            player.BuffHandle_SpawnPetIfNeededAndSetTime(buffIndex, ref unused, ModContent.ProjectileType<SteelPlusinsPetProjectile>());
         }
     }
 }

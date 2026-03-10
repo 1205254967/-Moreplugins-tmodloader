@@ -14,6 +14,7 @@ namespace Moreplugins.Content.Items.Accessories
         {
             Item.rare = ItemRarityID.Purple; // 紫色稀有度
             Item.value = Item.sellPrice(gold: 4); // 售价4金币
+            Item.manaIncrease = 50;
             base.SetDefaults();
         }
 
@@ -30,14 +31,10 @@ namespace Moreplugins.Content.Items.Accessories
         {
             base.UpdateAccessory(player, hideVisual);
             player.MPPlayer().shadowyeggplantEquipped = true;
-            // 增加50点最大魔力值
-            player.statManaMax2 += 50;
-
             // 增加1点魔力再生
             player.manaRegen += 1;
-
             // 跳跃速度提升，间接增加跳跃高度
             player.jumpSpeedBoost += 0.5f;
         }
     }
-    }
+ }

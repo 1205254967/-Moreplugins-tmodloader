@@ -139,7 +139,22 @@ namespace Moreplugins.Content.Players
                     isBoostedHit = true;
                 }
             }
-        }
 
+            if (holyPluginsEquipped)
+            {
+                if (modifiers.DamageType == DamageClass.Summon && Main.rand.NextBool(3))
+                {
+                    modifiers.SourceDamage *= 1.5f;
+                }
+            }
+
+            if (nightEquipped)
+            {
+                if (modifiers.DamageType == DamageClass.Summon && Main.rand.NextBool(3))
+                {
+                    modifiers.SourceDamage *= 1.5f;
+                }
+            }
+        }
     }
 }

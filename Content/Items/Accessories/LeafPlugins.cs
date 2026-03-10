@@ -14,9 +14,10 @@ namespace Moreplugins.Content.Items.Accessories
     {
         public override void SetDefaults()
         {
+            base.SetDefaults();
             Item.rare = ItemRarityID.Green; // 绿色稀有度
             Item.value = Item.sellPrice(gold: 3); // 售价3金币
-            base.SetDefaults();    
+            Item.manaIncrease = 40;
         }
         public override void AddRecipes()
         {
@@ -31,17 +32,9 @@ namespace Moreplugins.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             base.UpdateAccessory(player, hideVisual);
-            // 魔力伤害提升3%
-            player.GetDamage(DamageClass.Magic) += 0.03f;
-
-            // 魔法暴击率提升5%
+            player.GetDamage(DamageClass.Magic) += 3 / 100f;
             player.GetCritChance(DamageClass.Magic) += 5f;
-
-            // 法师武器面板伤害提升3点
             player.GetDamage(DamageClass.Generic).Flat += 3f;
-
-            // 最大魔力值提升40
-            player.statManaMax2 += 40;
         }
     }
 }

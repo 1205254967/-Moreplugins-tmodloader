@@ -19,13 +19,9 @@ namespace Moreplugins.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             base.UpdateAccessory(player, hideVisual);
-            // 提升2最大仆从数
             player.maxMinions += 2;
-
-            // 获得水上行走
+            // 水上行走
             player.waterWalk = true;
-
-            // 标记饰品已装备
             player.MPPlayer().nothosaurEquipped = true;
         }
     }

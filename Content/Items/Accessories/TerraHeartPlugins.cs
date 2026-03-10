@@ -13,9 +13,12 @@ namespace Moreplugins.Content.Items.Accessories
     {
         public override void SetDefaults()
         {
+            base.SetDefaults();
             Item.rare = ItemRarityID.Yellow; // 金色稀有度
             Item.value = Item.sellPrice(gold: 50); // 售价50金币
-            base.SetDefaults();
+            Item.defense = 10; // 10点基础防御力
+            Item.manaIncrease = 50;
+            Item.lifeRegen = 2;
         }
         public override void AddRecipes()
         {
@@ -29,28 +32,14 @@ namespace Moreplugins.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             base.UpdateAccessory(player, hideVisual);
-            // 提升10点武器基础面板伤害
             player.GetDamage(DamageClass.Generic).Flat += 5f;
-            // 10点防御力
-            player.statDefense += 10;
-            // 10点伤害减免
             player.endurance += 0.05f;
-            // 乘算伤害加成15%
+            player.GetAttackSpeed(DamageClass.Generic) += 0.1f;
             player.GetDamage(DamageClass.Generic) *= 1.10f;
-            // 暴击率提升10%
             player.GetCritChance(DamageClass.Generic) += 8f;
-            // 3点魔力再生
             player.manaRegen += 2;
-            // 3点生命再生
-            player.lifeRegen += 2;
-            // 50点最大生命值
-            player.statLifeMax2 += 40;
-            // 50点最大魔力值
-            player.statManaMax2 += 40;
-            // 2最大仆从数
+            player.statLifeMax2 += 50;
             player.maxMinions += 2;
-
-            // 标记饰品已装备
             player.MPPlayer().terraHeartEquipped = true;
         }
     }

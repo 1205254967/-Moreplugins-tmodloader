@@ -15,9 +15,11 @@ namespace Moreplugins.Content.Items.Accessories
     {
         public override void SetDefaults()
         {
-            Item.rare = ItemRarityID.Orange; // 橙色稀有度
-            Item.value = Item.sellPrice(gold: 3); // 售价3金币
-            base.SetDefaults();    
+            base.SetDefaults();
+            Item.rare = ItemRarityID.Orange;
+            Item.value = Item.sellPrice(gold: 3);
+            Item.lifeRegen = 1;
+            Item.defense = 2;
         }
 
         public override void AddRecipes()
@@ -32,13 +34,6 @@ namespace Moreplugins.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             base.UpdateAccessory(player, hideVisual);
-            // 获得1点生命再生
-            player.lifeRegen += 1;
-
-            // 增加2点防御力
-            player.statDefense += 2;
-
-            // 标记饰品已装备
             player.MPPlayer().massacreEquipped = true;
         }
     }

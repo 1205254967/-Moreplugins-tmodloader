@@ -1,5 +1,5 @@
 ﻿using Moreplugins.Content.Items.Accessories;
-using Moreplugins.Content.Pets;
+using Moreplugins.Content.Pets.Steel;
 using Moreplugins.Core.DropCondition;
 using Moreplugins.Core.Utilities;
 using Terraria;
@@ -19,7 +19,7 @@ namespace Moreplugins.Core.GlobalInstance.NPCs
                     shop.Add<DetonatorPlugins>();
                     break;
                 case NPCID.Merchant:
-                    shop.Add<PlusinsPetItem>();
+                    shop.Add<SteelPlusinsPetItem>();
                     break;
             }
         }

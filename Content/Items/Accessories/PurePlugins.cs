@@ -13,9 +13,10 @@ namespace Moreplugins.Content.Items.Accessories
     {
         public override void SetDefaults()
         {
-            Item.rare = ItemRarityID.Yellow; // 黄色稀有度
-            Item.value = Item.sellPrice(gold: 20); // 售价20金币
-            base.SetDefaults();    
+            base.SetDefaults();
+            Item.rare = ItemRarityID.Yellow;
+            Item.value = Item.sellPrice(gold: 20);
+            Item.defense = 8;
         }
 
         public override void AddRecipes()
@@ -31,16 +32,8 @@ namespace Moreplugins.Content.Items.Accessories
         {
             base.UpdateAccessory(player, hideVisual);
             player.MPPlayer().pureEquipped = true;
-
-            // 增加2最大仆从数量
             player.maxMinions += 2;
-
-            // 召唤物获得15%乘算伤害加成
             player.GetDamage(DamageClass.Summon) *= 1.05f;
-
-            // 获得8点防御
-            player.statDefense += 8;
-
             // 获得8点护甲穿透
             player.GetArmorPenetration(DamageClass.Summon) += 8;
         }

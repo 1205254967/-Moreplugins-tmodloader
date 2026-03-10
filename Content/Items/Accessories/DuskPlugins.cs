@@ -14,9 +14,12 @@ namespace Moreplugins.Content.Items.Accessories
     {
         public override void SetDefaults()
         {
+            base.SetDefaults();
             Item.rare = ItemRarityID.Yellow; // 黄色稀有度
             Item.value = Item.sellPrice(gold: 15); // 售价15金币
-            base.SetDefaults();
+            Item.defense = 5;
+            Item.manaIncrease = 50;
+            Item.lifeRegen = 2;
         }
         public override void AddRecipes()
         {
@@ -38,20 +41,13 @@ namespace Moreplugins.Content.Items.Accessories
             player.GetCritChance(DamageClass.Generic) += 5f;
             // 提升10%攻击速度
             player.GetAttackSpeed(DamageClass.Generic) += 0.1f;
-            // 5防御力
-            player.statDefense += 5;
             // 5%的伤害减免
             player.endurance += 0.05f;
-            // 获得50点最大魔力值
-            player.statManaMax2 += 50;
             // 2点魔力再生
             player.manaRegen += 2;
-            // 2点生命再生
-            player.lifeRegen += 2;
             // 免疫燃烧与着火了减益
             player.buffImmune[BuffID.OnFire] = true;
             player.buffImmune[BuffID.Burning] = true;
-
             // 标记饰品已装备
             base.UpdateAccessory(player, hideVisual);
             player.MPPlayer().duskEquipped = true;

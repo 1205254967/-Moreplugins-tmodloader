@@ -4,9 +4,9 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Moreplugins.Content.Pets
+namespace Moreplugins.Content.Pets.Steel
 {
-    public class PlusinsPetProjectile : ModProjectile
+    public class SteelPlusinsPetProjectile : ModProjectile
     {
 
         public override void SetDefaults()
@@ -30,7 +30,7 @@ namespace Moreplugins.Content.Pets
             Projectile.localAI[0] += 0.1f;
             Projectile.rotation = Projectile.localAI[0];
             Projectile.spriteDirection = 1;
-            if (!player.dead && player.HasBuff(ModContent.BuffType<PlusinsPetBuff>()))
+            if (!player.dead && player.HasBuff(ModContent.BuffType<SteelPlusinsPetBuff>()))
             {
                 Projectile.timeLeft = 2;
             }

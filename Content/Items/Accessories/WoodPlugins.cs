@@ -1,11 +1,11 @@
-﻿using Terraria;
+﻿using Moreplugins.Core.Utilities;
+using Terraria;
 using Terraria.ID;
 
 namespace Moreplugins.Content.Items.Accessories
 {
     internal class WoodPlugins : BasicPlugins
     {
-        int woodPluginsTime = 0;
 
         public override void SetDefaults()
         {
@@ -16,19 +16,8 @@ namespace Moreplugins.Content.Items.Accessories
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            woodPluginsTime++;
-            if(woodPluginsTime >= 1800)
-                if(Main.rand.NextBool(4))
-                {
-                    player.AddBuff(BuffID.Tipsy, 1800);
-                    woodPluginsTime = 0;
-                }
-                else
-                {
-                    woodPluginsTime = 0;
-                }
-
             base.UpdateAccessory(player, hideVisual);
+            player.MPPlayer().woodPluginsEquipped = true;
         }
         public override void AddRecipes()
         {

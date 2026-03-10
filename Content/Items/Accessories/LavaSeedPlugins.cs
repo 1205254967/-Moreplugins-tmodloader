@@ -12,9 +12,10 @@ namespace Moreplugins.Content.Items.Accessories
     {
         public override void SetDefaults()
         {
-            Item.rare = ItemRarityID.Orange; // 橙色稀有度
-            Item.value = Item.sellPrice(gold: 3); // 售价3金币
-            base.SetDefaults();    
+            base.SetDefaults();
+            Item.rare = ItemRarityID.Orange;
+            Item.value = Item.sellPrice(gold: 3);
+            Item.defense = 5;
         }
 
         public override void AddRecipes()
@@ -30,13 +31,7 @@ namespace Moreplugins.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             base.UpdateAccessory(player, hideVisual);
-            // 提升5点防御
-            player.statDefense += 5;
-
-            // 提升5%的伤害减免
             player.endurance += 0.05f;
-
-            // 标记饰品已装备
             player.MPPlayer().lavaSeedEquipped = true;
         }
     }

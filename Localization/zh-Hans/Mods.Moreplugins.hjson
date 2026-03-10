@@ -1,6 +1,7 @@
 Projectiles: {
 	// PlusinsPetProjectile.DisplayName: Plusins Pet Projectile
 	// DetonatorPluginsProjectile.DisplayName: Detonator Plugins Projectile
+	// SteelPlusinsPetProjectile.DisplayName: Steel Plusins Pet Projectile
 }
 
 AccessorySlot: {
@@ -10,14 +11,14 @@ AccessorySlot: {
 }
 
 Buffs: {
-	PlusinsPetBuff: {
+	SteelPlusinsPetBuff: {
 		DisplayName: 宠物金属
 		Description: 当金属受到离心力的影响时就会呈现这样的形态
 	}
 }
 
 Items: {
-	PlusinsPetItem: {
+	SteelPlusinsPetItem: {
 		DisplayName: 金属
 		Tooltip:
 			'''

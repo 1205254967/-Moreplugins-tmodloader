@@ -1,9 +1,7 @@
-using Microsoft.Xna.Framework;
-using System;
+using Moreplugins.Core.Utilities;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Moreplugins.Content.Players;
 
 namespace Moreplugins.Content.Items.Accessories
 {
@@ -14,9 +12,10 @@ namespace Moreplugins.Content.Items.Accessories
     {
         public override void SetDefaults()
         {
-            Item.rare = ItemRarityID.Pink; // 粉色稀有度
-            Item.value = Item.sellPrice(gold: 5); // 售价5金币
-            base.SetDefaults();    
+            base.SetDefaults();
+            Item.rare = ItemRarityID.Pink;
+            Item.value = Item.sellPrice(gold: 5);
+            Item.defense = 3;
         }
 
         public override void AddRecipes()
@@ -31,15 +30,11 @@ namespace Moreplugins.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             base.UpdateAccessory(player, hideVisual);
-            // 3点防御
-            player.statDefense += 3;
             // 1最大仆从数
             player.maxMinions += 1;
-            // 召唤物有30%概率造成150%伤害
-            //这他妈根本不会生效
-            player.GetCritChance(DamageClass.Summon) += 0.3f;
             // 5点护甲穿透
             player.GetArmorPenetration(DamageClass.Summon) += 5;
+            player.MPPlayer().holyPluginsEquipped = true;
         }
     }
 }

@@ -20,13 +20,28 @@ namespace Moreplugins.Content.Players
             if (soundAcc != soundAccOld)
             {
                 SoundEngine.PlaySound(DefaultSound);
+                soundAccOld = soundAcc;
             }
-            soundAccOld = soundAcc;
 
             if (hasUsedEffect)
             {
                 dieTimer++;
                 if (dieTimer % 60 == 0) { Player.statLife -= dieTimer / 60; }
+            }
+
+            if (woodPluginsEquipped)
+            {
+                woodPluginsTime++;
+                if (woodPluginsTime >= 1800)
+                if (Main.rand.NextBool(4))
+                {
+                    Player.AddBuff(BuffID.Tipsy, 1800);
+                    woodPluginsTime = 0;
+                }
+                else
+                {
+                    woodPluginsTime = 0;
+                }
             }
         }
         public void BudPluginsEffect()

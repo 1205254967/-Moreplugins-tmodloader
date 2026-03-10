@@ -1,10 +1,6 @@
-using Microsoft.Xna.Framework;
-using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.DataStructures;
-using Moreplugins.Content.Players;
 using Moreplugins.Core.Utilities;
 
 namespace Moreplugins.Content.Items.Accessories
@@ -16,9 +12,11 @@ namespace Moreplugins.Content.Items.Accessories
     {
         public override void SetDefaults()
         {
+            base.SetDefaults(); 
             Item.rare = ItemRarityID.Orange; // 橙色稀有度
             Item.value = Item.sellPrice(gold: 5); // 售价5金币
-            base.SetDefaults();    
+            Item.manaIncrease = 30;
+            Item.defense = 3;
         }
 
         public override void AddRecipes()
@@ -44,25 +42,13 @@ namespace Moreplugins.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             base.UpdateAccessory(player, hideVisual);
-            // 提升2点基础面板伤害
             player.GetDamage(DamageClass.Generic).Flat += 2f;
-            // 3%伤害加成
-            player.GetDamage(DamageClass.Generic) += 0.03f;
-            // 暴击率提升3%
+            player.GetDamage(DamageClass.Generic) += 3 / 100f;
             player.GetCritChance(DamageClass.Generic) += 3f;
-            // 获得3点防御
-            player.statDefense += 3;
-            // 3%伤害减免
             player.endurance += 0.03f;
-            // 召唤物有15%概率造成150%伤害
             player.GetDamage(DamageClass.Summon) += 0.5f;
-            // 最大魔力值提升30
-            player.statManaMax2 += 30;
-            // 免疫燃烧与着火了减益
             player.buffImmune[BuffID.OnFire] = true;
             player.buffImmune[BuffID.Burning] = true;
-
-            // 标记饰品已装备
             player.MPPlayer().nightEquipped = true;
         }
     }
