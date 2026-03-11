@@ -274,7 +274,6 @@ ShamanPlugins: {
 	Tooltip:
 		'''
 		对周围敌人进行触手攻击
-		伤害与原版相同，会造成暗影焰效果
 		[c/8a2be2:隐者之紫！]
 		'''
 }
@@ -353,18 +352,27 @@ VibrissaPlugins: {
 }
 
 MushroomPlugins: {
-	// DisplayName: Mushroom Plugins
-	// Tooltip: ""
+	Tooltip: 低生命值时回复少量生命值
+	DisplayName: 奇异蘑菇
 }
 
 WoodPlugins: {
-	// DisplayName: Wood Plugins
-	// Tooltip: ""
+	DisplayName: 红酒木塞
+	Tooltip:
+		'''
+		定期获得醉酒效果
+		活体陈酿
+		'''
 }
 
 MagicMirrorPlugins: {
-	// DisplayName: Magic Mirror Plugins
-	// Tooltip: ""
+	DisplayName: 带柄魔镜
+	Tooltip:
+		'''
+		在低生命值时传送回出生点
+
+		“无敌炉石！”
+		'''
 }
 
 Gingerbreadman: {
@@ -373,6 +381,10 @@ Gingerbreadman: {
 }
 
 GingerbreadmanPlugins: {
-	// DisplayName: Gingerbreadman Plugins
-	// Tooltip: ""
+	DisplayName: 姜氏姜饼人
+	Tooltip:
+		'''
+		使你在受到致命伤害后复活但会持续衰减生命值
+		[c/ff0000:战斗，爽！]
+		'''
 }

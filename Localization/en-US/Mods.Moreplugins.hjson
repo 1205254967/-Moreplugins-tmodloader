@@ -5,31 +5,35 @@ Projectiles: {
 }
 
 AccessorySlot: {
-	FunctionalSlot: This is YOU ASS
-	VanitySlot: ""
-	DyeSlot: ""
+	FunctionalSlot: Modify your plugins
+	VanitySlot: Vanity plugins
+	DyeSlot: Dye
 }
 
 Buffs: {
 	SteelPlusinsPetBuff: {
-		DisplayName: Plusins Pet Buff
-		Description: Mods.Moreplugins.Buffs.PlusinsPetBuff.Description
+		DisplayName: Metal Pet
+		Description: This is how metal looks when affected by centrifugal force
 	}
 }
 
 Items: {
 	SteelPlusinsPetItem: {
-		DisplayName: Plusins Pet Item
-		Tooltip: ""
+		DisplayName: Metal
+		Tooltip:
+			'''
+			Summons a metal pet
+			[c/8b0000:Donor item]
+			'''
 	}
 }
 
 EnchantedPlusinsTooltip: {
-	Warding: ""
-	Lucky: ""
-	Menacing: ""
-	Quick: ""
-	violent: ""
+	Warding: (+2 defense)
+	Lucky: (+2% critical strike chance)
+	Menacing: (+2% damage)
+	Quick: (+2% movement speed)
+	violent: (+2% melee speed)
 }
 
 PluginConditoins.OnDaytimeEmpress: ""

@@ -1,181 +1,378 @@
 BudPlugins: {
-	DisplayName: Bud Plugins
-	Tooltip: ""
+	DisplayName: Flower Bud
+	Tooltip:
+		'''
+		Regain 40 health every 10 seconds
+		[c/00ff00:Is that a jungle spore between your ears? I'm asking you]
+		'''
 }
 
 DetonatorPlugins: {
-	DisplayName: Detonator Plugins
-	Tooltip: ""
+	DisplayName: Detonator
+	Tooltip:
+		'''
+		Explodes when character dies
+		[c/7f7f7f:Rolls-Royce engine exploded during annual inspection, testing company: 10-year-old vehicle has been towed to repair shop — Elephant News]
+		'''
 }
 
 DiscoPlugins: {
-	DisplayName: Disco Plugins
-	Tooltip: ""
+	DisplayName: Disco Prism
+	Tooltip:
+		'''
+		Spawns a disco prism to follow you
+		Does not occupy sentry slots
+		[c/ff0000:Turn][c/ff7f00:on][c/ffff00:the][c/00ff00:recorder][c/0000ff:～]
+		'''
 }
 
 DuskPlugins: {
-	DisplayName: Dusk Plugins
-	Tooltip: ""
+	DisplayName: Dusk
+	Tooltip:
+		'''
+		Increases weapon base damage by 5
+		5% damage increase
+		5% critical strike chance increase
+		10% attack speed increase
+		5 defense and 5% damage reduction
+		Gain 50 maximum mana
+		2 mana regeneration and life regeneration
+		Attacks inflict On Fire!, Frostburn and Ichor debuffs on enemies
+		Immune to Burning and On Fire! debuffs
+		[c/ff8c00:Dusk misses those who haven't returned...]
+		'''
 }
 
 EnchantedPlusins: {
-	DisplayName: Enchanted Plusins
-	Tooltip: ""
+	DisplayName: "[c/9696ff:Enchanted]"
+	Tooltip:
+		'''
+		Enhances your tier 4 affix effects
+		[c/9696ff:You have been enhanced...]
+		'''
 }
 
 EyePlugins: {
-	DisplayName: Eye Plugins
-	Tooltip: ""
+	DisplayName: Unsuspicious Eye
+	Tooltip: A third eye allows you to see in the dark
 }
 
 GelatinJellyPlugins: {
-	DisplayName: Gelatin Jelly Plugins
-	Tooltip: ""
+	DisplayName: Gelatin Jelly
+	Tooltip:
+		'''
+		10% movement speed increase
+		10% dash speed increase
+		10% flight time increase
+		10% flight speed increase
+		[c/ff69b4:Faster, higher, stronger!]
+		'''
 }
 
 GhostPlugins: {
-	DisplayName: Ghost Plugins
-	Tooltip: ""
+	DisplayName: Ghost
+	Tooltip:
+		'''
+		Attack restores 1% of damage dealt
+		[c/708090:Stealing souls]
+		'''
 }
 
 GiantfistPlugins: {
-	DisplayName: Giantfist Plugins
-	Tooltip: ""
+	DisplayName: Giant's Fist
+	Tooltip:
+		'''
+		Delivers a powerful punch every minute dealing 20000 damage to a random enemy
+		[c/ffff00:Justice execution!]
+		'''
 }
 
 GuidePlugins: {
-	DisplayName: Guide Plugins
-	Tooltip: ""
+	DisplayName: Guide's Blessing
+	Tooltip:
+		'''
+		Gain 20 maximum health
+		Directly increase weapon damage by 3
+		[c/ff6b6b:How could you...]
+		'''
 }
 
 HandPlugins: {
-	DisplayName: Hand Plugins
-	Tooltip: ""
+	DisplayName: "[c/ffd700:Hand]"
+	Tooltip:
+		'''
+		Provides 50% damage bonus during the day
+		[c/ff6b6b:Even I feel pity]
+		'''
 }
 
 HeartOfQueenPlugins: {
-	DisplayName: Heart Of Queen Plugins
-	Tooltip: ""
+	DisplayName: Queen's Heart
+	Tooltip: The essence of the Empress of Light has permeated this sacred relic.
 }
 
 HeartofSteelPlugins: {
-	DisplayName: Heartof Steel Plugins
-	Tooltip: ""
+	DisplayName: Heart of Steel
+	Tooltip:
+		'''
+		5% multiplicative damage bonus
+		2 life regeneration
+		Healing potion cooldown reduced by 25%
+		[c/ffff0a:Strong will!]
+		'''
 }
 
 HolyPlugins: {
-	DisplayName: Holy Plugins
-	Tooltip: ""
+	DisplayName: Chipped Cross
+	Tooltip:
+		'''
+		3 defense
+		1 maximum minion count
+		30% chance for minions to deal 150% damage
+		5 armor penetration
+		[c/ffff00:3 Hallowed Bars should make 3 defense!]
+		'''
 }
 
 KaishakuninPlugins: {
-	DisplayName: Kaishakunin Plugins
-	Tooltip: ""
+	DisplayName: Executioner
+	Tooltip:
+		'''
+		Every 5 seconds, next attack damage increased by 50%
+		[c/ff6b6b:Draw sword slash!]
+		'''
 }
 
 LavaSeedPlugins: {
-	DisplayName: Lava Seed Plugins
-	Tooltip: ""
+	DisplayName: Lava Heart
+	Tooltip:
+		'''
+		5 defense increase
+		5% damage reduction increase
+		Attacks inflict "On Fire!" debuff on enemies
+		[c/ff4500:Warm-hearted]
+		'''
 }
 
 LeafPlugins: {
-	DisplayName: Leaf Plugins
-	Tooltip: ""
+	DisplayName: Leaf
+	Tooltip:
+		'''
+		3% magic damage increase
+		5% magic critical strike chance increase
+		3 point increase to magic weapon base damage
+		40 maximum mana increase
+		[c/228B22:Power of nature...]
+		'''
 }
 
 MassacrePlugins: {
-	DisplayName: Massacre Plugins
-	Tooltip: ""
+	DisplayName: Massacre
+	Tooltip:
+		'''
+		2 defense increase
+		1 life regeneration
+		Attacking enemies causes them to bleed
+		4 damage per second to enemies for 5 seconds
+		Enemies periodically emit red particles
+		[c/ff0000:Blood for blood...]
+		'''
 }
 
 MeatballPlugins: {
-	DisplayName: Meatball Plugins
-	Tooltip: ""
+	DisplayName: Meatball
+	Tooltip:
+		'''
+		Causes enemies' internal organs to burst
+		[c/ff0000:R18G]
+		'''
 }
 
 NightPlugins: {
-	DisplayName: Night Plugins
-	Tooltip: "{0}{1}{2}{3}{4}"
+	DisplayName: Night
+	Tooltip:
+		'''
+		Increase {0} base damage, {0}% damage
+		Increase {1} critical strike chance and damage reduction
+		Minions deal {3} damage with {2} probability
+		Increase {4} maximum mana
+		Attacks inflict On Fire! debuff on enemies
+		Immune to Burning and On Fire! debuffs
+		Every 5 seconds, next damage increased by 40%
+		[c/8a2be2:In that lonely night...]
+		'''
 }
 
 NothosaurPlugins: {
-	DisplayName: Nothosaur Plugins
-	Tooltip: ""
+	DisplayName: Nothosaur
+	Tooltip:
+		'''
+		Maximum minion count +2
+		Walk on water
+		Fires tracking bubbles every 2 seconds
+		[c/99CCFF:Don't use soapy water for lubrication!]
+		'''
 }
 
 NuclearWarheadPlugins: {
-	DisplayName: Nuclear Warhead Plugins
-	Tooltip: ""
+	DisplayName: Nuclear Warhead
+	Tooltip:
+		'''
+		Launches a nuclear bomb every 30 seconds
+		[c/008000:Never misfires!]
+		'''
 }
 
 OutdoorsurvivalkitPlugins: {
-	DisplayName: Outdoorsurvivalkit Plugins
-	Tooltip: ""
+	DisplayName: Outdoor Survival Kit
+	Tooltip:
+		'''
+		Summons a pair of Eye of Cthulhu that don't occupy summon slots
+		Randomly fires lasers of different colors
+		[c/ff0000:Red laser deals 50 damage]
+		[c/00ff00:Green laser deals 20 damage and inflicts Cursed Inferno]
+		[c/ffff00:Yellow laser deals 15 damage and inflicts Ichor]
+		[c/0000ff:Blue laser deals 30 damage and inflicts Frostburn]
+		[c/00ff00:Coyote walking in the wilderness!]
+		'''
 }
 
 PumpkinCandlePlugins: {
-	DisplayName: Pumpkin Candle Plugins
-	Tooltip: ""
+	DisplayName: Pumpkin Candle
+	Tooltip:
+		'''
+		Your Horseman's Blade will directly attack enemies!
+		[c/ffa500:The doctor performed myopia surgery on the Flame Jack pumpkins...]
+		'''
 }
 
 PurePlugins: {
-	DisplayName: Pure Plugins
-	Tooltip: ""
+	DisplayName: Purity
+	Tooltip:
+		'''
+		2 maximum minion count increase
+		5% multiplicative damage bonus for minions
+		8 defense increase
+		8 armor penetration
+		[c/ffd700:Like a maiden...]
+		'''
 }
 
 ShadowyeggplantPlugins: {
-	DisplayName: Shadowyeggplant Plugins
-	Tooltip: ""
+	DisplayName: Shadowy Eggplant
+	Tooltip:
+		'''
+		10% chance for minions to deal 200% damage
+		50 maximum mana increase
+		1 mana regeneration increase
+		[c/9932cc:Why do inorganic substances synthesize organic substances?]
+		'''
 }
 
 ShamanPlugins: {
-	DisplayName: Shaman Plugins
-	Tooltip: ""
+	DisplayName: Shaman
+	Tooltip:
+		'''
+		Tentacle attacks on surrounding enemies
+		[c/8a2be2:Hermit Purple!]
+		'''
 }
 
 SteelPlugins: {
-	DisplayName: Steel Plugins
-	Tooltip: ""
+	DisplayName: Alloy
+	Tooltip:
+		'''
+		1% damage bonus
+		1 armor penetration
+		3% attack speed increase
+		1 defense increase
+		1% damage reduction
+		5% movement speed increase
+		5% tool use speed increase
+		[c/8b4513:The beginning of everything...?]
+		'''
 }
 
 TanghuluPlugins: {
-	DisplayName: Tanghulu Plugins
-	Tooltip: ""
+	DisplayName: Tanghulu
+	Tooltip:
+		'''
+		400 maximum health increase
+		Defense reduced by half
+		[c/ff6b6b:Swollen to look fat]
+		'''
 }
 
 TerraHeartPlugins: {
-	DisplayName: Terra Heart Plugins
-	Tooltip: ""
+	DisplayName: Terra Heart
+	Tooltip:
+		'''
+		[c/ffd700:5 point increase to weapon base damage]
+		[c/ffd700:10 defense and 5% damage reduction]
+		[c/ffd700:10% multiplicative damage bonus]
+		[c/ffd700:10% attack speed increase]
+		[c/ffd700:8% critical strike chance increase]
+		[c/ffd700:2 mana regeneration and life regeneration]
+		[c/ffd700:50 maximum health and mana]
+		[c/ffd700:2 maximum minion count]
+		[c/ffd700:Inflicts On Fire!, Frostburn and Ichor debuffs for 5 seconds]
+		[c/ffd700:Every 15 seconds, next damage increased by 300%]
+		[c/ffd700:And restores 10% of this damage]
+		[c/ffd700:You control the power of the entire world!]
+		'''
 }
 
 ThornPlugins: {
-	DisplayName: Thorn Plugins
-	Tooltip: ""
+	DisplayName: Thorn
+	Tooltip:
+		'''
+		Counterattacks enemies for triple damage
+		[c/228B22:Triple repayment]
+		'''
 }
 
 UnityPlugins: {
-	DisplayName: Unity Plugins
-	Tooltip: ""
+	DisplayName: Unity
+	Tooltip:
+		'''
+		[c/9932cc:Stardust power makes you one as many]
+		[c/ff8c00:Solar power makes you as hard as iron]
+		[c/00ff00:Vortex power makes you indestructible]
+		[c/ff69b4:Nebula power makes you mana abundant]
+		'''
 }
 
 VibrissaPlugins: {
-	DisplayName: Vibrissa Plugins
-	Tooltip: ""
+	DisplayName: Vibrissa
+	Tooltip:
+		'''
+		Summons two cute little bees
+		[c/f4a460:Itchy, itchy]
+		'''
 }
 
 MushroomPlugins: {
-	DisplayName: Mushroom Plugins
 	Tooltip: ""
+	DisplayName: Mushroom Plugins
 }
 
 WoodPlugins: {
-	DisplayName: Wood Plugins
-	Tooltip: ""
+	DisplayName: Wine Cork
+	Tooltip:
+		'''
+		Periodically gains drunken effect
+		Living brew
+		'''
 }
 
 MagicMirrorPlugins: {
-	DisplayName: Magic Mirror Plugins
-	Tooltip: ""
+	DisplayName: Handheld Magic Mirror
+	Tooltip:
+		'''
+		Teleports back to spawn point at low health
+
+		"Invincible hearthstone!"
+		'''
 }
 
 Gingerbreadman: {
@@ -184,6 +381,10 @@ Gingerbreadman: {
 }
 
 GingerbreadmanPlugins: {
-	DisplayName: Gingerbreadman Plugins
-	Tooltip: ""
+	DisplayName: Ginger's Gingerbreadman
+	Tooltip:
+		'''
+		Resurrects you after taking fatal damage but continuously drains health
+		[c/ff0000:Battle, exhilarating!]
+		'''
 }
