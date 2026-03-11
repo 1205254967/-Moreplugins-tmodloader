@@ -8,6 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Terraria;
 using Terraria.Audio;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -27,6 +28,7 @@ namespace Moreplugins.Content.Players
             {
                 dieTimer++;
                 if (dieTimer % 60 == 0) { Player.statLife -= dieTimer / 60; }
+                if( Player.statLife <=0) { Player.KillMe(PlayerDeathReason.LegacyDefault(), 1, 0); }
             }
 
             if (woodPluginsEquipped)
