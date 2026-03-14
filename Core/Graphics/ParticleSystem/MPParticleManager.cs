@@ -42,7 +42,7 @@ namespace Moreplugins.Core.Graphics.ParticleSystem
             UpdateParticleList(PriorityActiveParticlesAlpha);
             UpdateParticleList(PriorityActiveParticlesNonPremultiplied);
             UpdateParticleList(PriorityActiveParticlesAdditive);
-            TotalDustCount += ActiveParticlesAlpha.Count + ActiveParticlesNonPremultiplied.Count + ActiveParticlesAdditive.Count + PriorityActiveParticlesAlpha.Count + PriorityActiveParticlesNonPremultiplied.Count + PriorityActiveParticlesAdditive.Count;
+            TotalDustCount = ActiveParticlesAlpha.Count + ActiveParticlesNonPremultiplied.Count + ActiveParticlesAdditive.Count + PriorityActiveParticlesAlpha.Count + PriorityActiveParticlesNonPremultiplied.Count + PriorityActiveParticlesAdditive.Count;
         }
         public static void UpdateParticleList(List<MPParticle> list)
         {

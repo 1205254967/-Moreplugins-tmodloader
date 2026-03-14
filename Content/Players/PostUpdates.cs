@@ -300,7 +300,7 @@ namespace Moreplugins.Content.Players
             {
                 // 每过15秒，下次伤害提升500%
                 terraHeartAttackTimer++;
-                if (terraHeartAttackTimer >= 900) // 15秒 = 900帧
+                if (terraHeartAttackTimer >= GetSeconds(15)) // 15秒 = 900帧
                 {
                     terraHeartAamageBoostActive = true;
                 }

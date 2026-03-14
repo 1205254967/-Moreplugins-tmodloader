@@ -65,7 +65,7 @@ namespace Moreplugins.Content.Particles
             Texture2D texture = MPTextureRegister.SharpTear;
             spriteBatch.Draw(texture, Position - Main.screenPosition, null, SparkColor, Rotation, texture.Size() * 0.5f, scale, 0, 0f);
             if (DrawGlow)
-                spriteBatch.Draw(texture, Position - Main.screenPosition, null, SparkColor, Rotation, texture.Size() * 0.5f, scale * new Vector2(GlowScale, 1f), 0, 0f);
+                spriteBatch.Draw(texture, Position - Main.screenPosition, null, Color.White, Rotation, texture.Size() * 0.5f, scale * new Vector2(GlowScale, 1f), 0, 0f);
         }
     }
 }

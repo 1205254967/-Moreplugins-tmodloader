@@ -43,7 +43,7 @@ namespace Moreplugins.Content.Particles
         public override void Update()
         {
             FadeOut -= 0.05f;
-            Scale *= 0.93f;
+            Scale *= 0.97f;
             DrawColor = Color.Lerp(InitColor, InitColor * 0.2f, (float)Math.Pow(LifetimeRatio, 30));
             if (!NoLighting)
                 Lighting.AddLight(Position, new Vector3(DrawColor.R / 255f, DrawColor.G /255f, DrawColor.B/255f));
@@ -62,7 +62,7 @@ namespace Moreplugins.Content.Particles
             Texture2D texture = MPTextureRegister.ShinyOrb.Value;
             spriteBatch.Draw(texture, Position - Main.screenPosition, null, DrawColor, Rotation, texture.Size() * 0.5f, scale, 0, 0f);
             if (GlowCenter)
-                spriteBatch.Draw(texture, Position - Main.screenPosition, null, Color.White * FadeOut, Rotation, texture.Size() * 0.5f, scale * GlowCenterScale, 0, 0f);
+                spriteBatch.Draw(texture, Position - Main.screenPosition, null, Color.White, Rotation, texture.Size() * 0.5f, scale * GlowCenterScale, 0, 0f);
         }
     }
 }

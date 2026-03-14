@@ -36,7 +36,7 @@ namespace Moreplugins.Content.Items.Accessories
         {
             CreateRecipe()
                 .AddIngredient(ItemID.QueenSlimeCrystal, 1)
-                .AddIngredient(ItemID.IronBar, 3)
+                .AddRecipeGroup(RecipeGroupID.IronBar, 5)
                 .AddTile(TileID.WorkBenches)
                 .Register();
         }
