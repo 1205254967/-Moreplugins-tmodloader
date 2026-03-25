@@ -36,4 +36,5 @@ EnchantedPlusinsTooltip: {
 	violent: (+2% melee speed)
 }
 
+DeathMessage.SwordfishDash: Impaled by a swordfish.
 PluginConditoins.OnDaytimeEmpress: ""

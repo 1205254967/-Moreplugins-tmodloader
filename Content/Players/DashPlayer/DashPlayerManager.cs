@@ -45,7 +45,7 @@ namespace Moreplugins.Content.Players.DashPlayer
                 if (OverideCurDashID != -1)
                     Index = OverideCurDashID;
                 MPPlayerDash ActiveDash = DashCollection[Index];
-                // 监测是否开始冲刺
+                // 监测是否开始冲刺，调用到这里就暂时不用管了，下面自己会赋值
                 HandleDashBegin(out bool ThisCanDash);
                 if (ThisCanDash)
                 {
@@ -145,6 +145,7 @@ namespace Moreplugins.Content.Players.DashPlayer
                 {
                     if (ActiveDash.Colliding(hitArea, n.Hitbox) && (n.noTileCollide || Player.CanHit(n)))
                     {
+                    //下面是冲刺具体执行内容
                         int npcPreDamageHP = n.life;
                         DashDamageInfo dashDamageInfo = ActiveDash.DashDamageInfo(Player);
                         ActiveDash.ModifyDashDamage(Player, ref dashDamageInfo);

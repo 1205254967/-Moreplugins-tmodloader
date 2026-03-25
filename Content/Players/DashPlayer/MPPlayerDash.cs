@@ -100,6 +100,8 @@ namespace Moreplugins.Content.Players.DashPlayer
         public virtual void OnHitNPC(Player player, NPC target, int DamageDone)
         {
         }
+
+
         protected sealed override void Register()
         {
             Type = DashPlayerManager.DashCollection.Count;

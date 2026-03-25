@@ -388,3 +388,8 @@ GingerbreadmanPlugins: {
 		[c/ff0000:Battle, exhilarating!]
 		'''
 }
+
+SwordfishPlugins: {
+	DisplayName: Swordfish Plugins
+	Tooltip: ""
+}

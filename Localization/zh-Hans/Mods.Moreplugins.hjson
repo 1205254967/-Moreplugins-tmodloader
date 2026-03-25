@@ -36,4 +36,5 @@ EnchantedPlusinsTooltip: {
 	violent: （+2%近战速度）
 }
 
+DeathMessage.SwordfishDash: 被剑鱼刺穿了身体。
 // PluginConditoins.OnDaytimeEmpress: ""
