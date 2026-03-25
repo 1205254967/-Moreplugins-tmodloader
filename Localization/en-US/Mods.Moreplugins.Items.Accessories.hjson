@@ -390,6 +390,10 @@ GingerbreadmanPlugins: {
 }
 
 SwordfishPlugins: {
-	DisplayName: Swordfish Plugins
-	Tooltip: ""
+	DisplayName: Kitchen Waste
+	Tooltip: 
+		'''
+		Gain a dash effect with a cost
+		"Don't poke my butt!"
+		'''
 }

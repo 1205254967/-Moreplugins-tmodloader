@@ -390,6 +390,10 @@ GingerbreadmanPlugins: {
 }
 
 SwordfishPlugins: {
-	// DisplayName: Swordfish Plugins
-	// Tooltip: ""
+	DisplayName: 厨余垃圾
+	Tooltip: 
+		'''
+		获得有代价的冲刺效果
+		“不要戳我屁股！”
+		'''
 }
